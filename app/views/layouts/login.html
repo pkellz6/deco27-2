@@ -1,0 +1,960 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Comohos Store</title>
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="HTMLCooker">
+
+    <!-- ================= Favicon ================== -->
+    <!-- Standard -->
+    <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
+    <!-- Retina iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
+    <!-- Retina iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
+    <!-- Standard iPad Touch Icon--> 
+    <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
+    <!-- Standard iPhone Touch Icon--> 
+    <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
+
+	<!-- ================= Google Fonts ================== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="css/boss_megamenu.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.jgrowl.css" />
+    <link rel="stylesheet" type="text/css" href="css/boss_alphabet.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/boss_facecomments.css" />
+    <link rel="stylesheet" type="text/css" href="css/loading.css" />
+    <link rel="stylesheet" type="text/css" href="css/cs.animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/video.css" />
+    <link rel="stylesheet" type="text/css" href="css/isotope.css" />
+    <link rel="stylesheet" type="text/css" href="css/bossblog.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/revolutionslider_settings.css" media="screen" />
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body class="account-login">
+    <div id="bt_loading">
+        <div class="bt-loading">
+            <div id="circularG">
+                <div id="circularG_1" class="circularG"> </div>
+                <div id="circularG_2" class="circularG"> </div>
+                <div id="circularG_3" class="circularG"> </div>
+                <div id="circularG_4" class="circularG"> </div>
+                <div id="circularG_5" class="circularG"> </div>
+                <div id="circularG_6" class="circularG"> </div>
+                <div id="circularG_7" class="circularG"> </div>
+                <div id="circularG_8" class="circularG"> </div>
+            </div>
+        </div>
+    </div><!-- /#bt_loading -->
+
+    <div id="bt_container" class="bt-wide">
+        <div id="bt_header">
+                <nav id="top">
+                    <div class="container">
+                        <div class="row">
+                            <div id="left_top_links" class="nav pull-left"> <a href="contact.html"><i class="fa fa-phone"></i> <span>HOTLINE: 111-111-1111</span></a> </div>
+                            <div id="right_top_links" class="nav pull-right">
+                                <div class="pull-right">
+                                    <div id="cart" class="btn-group btn-block">
+                                        <button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="btn btn-inverse btn-block btn-lg dropdown-toggle"><i class="fa fa-shopping-cart"></i> <span id="cart-total">0 item(s) - $0.00</span>
+                                        </button>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li>
+                                                <p class="text-center">Your shopping cart is empty!</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="bt-language">
+                                    <form method="post" enctype="multipart/form-data" class="language">
+                                        <div class="btn-group">
+                                            <button class="btn btn-link dropdown-toggle" data-toggle="dropdown"> <img src="images/flags/gb.png" alt="English" title="English"> <span>en</span><i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="en"><span class="text-left">English</span><span class="text-right"><img src="images/flags/gb.png" alt="English" title="English" /></span></a>
+                                                </li>
+                                                <li><a href="de"><span class="text-left">Deutsch</span><span class="text-right"><img src="images/flags/de.png" alt="Deutsch" title="Deutsch" /></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <input type="hidden" name="code" value="" />
+                                        <input type="hidden" name="redirect" value="" /> </form>
+                                </div><!-- /.bt-language -->
+                                <div class="bt-currency">
+                                    <form  method="post" enctype="multipart/form-data" class="currency">
+                                        <div class="btn-group">
+                                            <button class="btn btn-link dropdown-toggle" data-toggle="dropdown"> <strong>$</strong> <span>USD</span> <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <button class="currency-select btn btn-link" type="button" name="EUR"><span>Euro</span> <span>€</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="currency-select btn btn-link" type="button" name="GBP"><span>Pound Sterling</span> <span>£</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="currency-select btn btn-link" type="button" name="USD"><span>US Dollar</span> <span>$</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <input type="hidden" name="code" value="" />
+                                        <input type="hidden" name="redirect" value="" /> </form>
+                                </div><!-- /.bt-currency -->
+                                <ul class="list-inline">
+                                    <li class="dropdown"><a href="#" title="My Account" class="dropdown-toggle" data-toggle="dropdown"><span><i class="fa fa-user"></i>My Account</span><i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li><a href="register.html"><span>Register</span><span><i class="fa fa-unlock-alt"></i></span></a>
+                                            </li>
+                                            <li><a href="login.html"><span>Login</span><span><i class="fa fa-user"></i></span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="wishlist.html" id="wishlist-total" title="Wish List (0)"><span><i class="fa fa-heart"></i>Wish List (0)</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container">
+                    <div class="row">
+                        <div class="bt-content-menu" style="float: left; width: 100%; clear: both; height: 1px;"></div>
+                    </div>
+                </div> <a class="open-bt-mobile"><i class="fa fa-bars"></i></a>
+                <div class="bt-mobile">
+                    <div class="menu_mobile"> <a class="close-panel"><i class="fa fa-times-circle"></i></a>
+                        <div class="bt-language">
+                            <form method="post" enctype="multipart/form-data" class="language">
+                                <div class="btn-group">
+                                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown"> <img src="images/flags/gb.png" alt="English" title="English"> <span>en</span><i class="fa fa-angle-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="en"><span class="text-left">English</span><span class="text-right"><img src="images/flags/gb.png" alt="English" title="English" /></span></a>
+                                        </li>
+                                        <li><a href="de"><span class="text-left">Deutsch</span><span class="text-right"><img src="images/flags/de.png" alt="Deutsch" title="Deutsch" /></span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="code" value="" />
+                                <input type="hidden" name="redirect" value="" /> </form>
+                        </div><!-- /.bt-language -->
+                        <div class="bt-currency">
+                            <form  method="post" enctype="multipart/form-data" class="currency">
+                                <div class="btn-group">
+                                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown"> <strong>$</strong> <span>USD</span> <i class="fa fa-angle-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <button class="currency-select btn btn-link" type="button" name="EUR"><span>Euro</span> <span>€</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="currency-select btn btn-link" type="button" name="GBP"><span>Pound Sterling</span> <span>£</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="currency-select btn btn-link" type="button" name="USD"><span>US Dollar</span> <span>$</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="code" value="" />
+                                <input type="hidden" name="redirect" value="" /> </form>
+                        </div><!-- /.bt-currency -->
+                        <div class="logged-link"> <a href="login.html"><i class="fa fa-sign-in"></i><span>Sign In</span></a> <a href="register.html"><i class="fa fa-hand-o-up"></i><span>Join for Free</span></a> </div>
+                        <div class="menubar">
+                            <div class="container">
+                                <div class="bt_mainmenu">
+                                    <div class="row">
+                                        <div class="nav-heading"> <a class="open-panel"><b>MENU</b><span><i class="fa fa-bars"></i></span></a> </div>
+                                        <nav class="mega-menu"> <a class="close-panel"><i class="fa fa-times-circle"></i></a>
+                                            <ul class="nav nav-pills">
+                                                <li> <a href="index.html"><span class="menu-title">Home</span></a> </li>
+                                                <li class="parent">
+                                                    <p class="plus visible-xs">+</p> <a href="#"><span class="menu-title">Men's</span><i class="fa fa-angle-down"></i></a>
+                                                    <div class="dropdown drop-grid-6-6">
+                                                        <div class="menu-row row-col-6">
+                                                            <div class="menu-column row-grid-2">
+                                                                <!-- html-->
+                                                                <div class="staticblock">
+                                                                    <a title="Comohos" href="index.html"><img src="images/logo.png" title="Comohos" alt="Comohos">
+                                                                    </a>
+                                                                    <p>Metallic round sunglasses powder blue loafer Prada Saffiano button up print. Crop Saint Laurent lilac sports luxe strong eyebrows la marinière razor pleats shoe statement gold collar. Floral bandeau envelope clutch dove grey Jil Sander Vasari dress. Leggings Lanvin Jil Sander Vasari texture collarless grunge leather tote.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="menu-column row-grid-1">
+                                                                <a href="#" class="parent">Sweaters</a>
+                                                                <ul class="column category">
+                                                                    <li class="col-grid-1 "> <a href="#">Hoodies &amp; Jackets</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Pants &amp; Shorts</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Outerwear</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Slips &amp; Shapewear</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Sweatshirts</a> </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="menu-column row-grid-1">
+                                                                <a href="#" class="parent">Shirts</a>
+                                                                <ul class="column category">
+                                                                    <li class="col-grid-1 "> <a href="#">Sleep &amp; Lounge</a> </li>
+                                                                    <li class="col-grid-1 sub_category"> <a href="#">Sweatshirts<i class="fa fa-angle-right"></i></a>
+                                                                        <div class="sub_menu">
+                                                                            <ul>
+                                                                                <li><a href="#_31">Underwear &amp; Socks</a>
+                                                                                </li>
+                                                                                <li><a href="#_24">Underwear</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Jeans</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Cords</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">T-Shirts</a> </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="menu-column row-grid-1">
+                                                                <!-- information -->
+                                                                <ul class="column information">
+                                                                    <li class="col-grid-1"><a href="about.html">About Us</a>
+                                                                    </li>
+                                                                    <li class="col-grid-1"><a href="#">Privacy Policy</a>
+                                                                    </li>
+                                                                    <li class="col-grid-1"><a href="#">Terms &amp; Conditions</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="menu-column row-grid-1">
+                                                                <ul class="column product">
+                                                                    <!-- product -->
+                                                                    <li class="col-grid-1">
+                                                                        
+                                                                        <div class="image">
+                                                                            <a href="product-detail.html"><img src="images/product/p8-170x204.jpg" alt="Ribbed boots holographic Céline" />
+                                                                            </a>
+                                                                            <br/>
+                                                                        </div>
+                                                                        <div class="name"><a href="product-detail.html">Ribbed boots holographic Céline</a>
+                                                                            <br />
+                                                                        </div>
+                                                                        <div class="price"> $337.99 </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="parent">
+                                                    <p class="plus visible-xs">+</p> <a href="#"><span class="menu-title">Women's</span><i class="fa fa-angle-down"></i></a>
+                                                    <div class="dropdown drop-grid-6-3">
+                                                        <div class="menu-row row-col-3"> <img alt="bg image" src="images/bg_menu.jpg" class="row-bg-image bt-menu-bg">
+                                                            <div class="menu-column row-grid-1">
+                                                                <a href="#" class="parent">Sweaters</a>
+                                                                <ul class="column category">
+                                                                    <li class="col-grid-1 "> <a href="#">Hoodies &amp; Jackets</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Pants &amp; Shorts</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Outerwear</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Slips &amp; Shapewear</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Sweatshirts</a> </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="menu-column row-grid-1">
+                                                                <a href="#" class="parent">Sweaters</a>
+                                                                <ul class="column category">
+                                                                    <li class="col-grid-1 "> <a href="#">Hoodies &amp; Jackets</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Pants &amp; Shorts</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Outerwear</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Slips &amp; Shapewear</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Sweatshirts</a> </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="parent">
+                                                    <p class="plus visible-xs">+</p> <a href="#"><span class="menu-title">Bags</span><i class="fa fa-angle-down"></i></a>
+                                                    <div class="dropdown drop-grid-6-1">
+                                                        <div class="menu-row row-col-1">
+                                                            <div class="menu-column row-grid-1">
+                                                                <a href="#" class="parent">Shirts</a>
+                                                                <ul class="column category">
+                                                                    <li class="col-grid-1 "> <a href="#">Sleep &amp; Lounge</a> </li>
+                                                                    <li class="col-grid-1 sub_category"> <a href="#">Sweatshirts<i class="fa fa-angle-right"></i></a>
+                                                                        <div class="sub_menu">
+                                                                            <ul>
+                                                                                <li><a href="#_31">Underwear &amp; Socks</a>
+                                                                                </li>
+                                                                                <li><a href="#_24">Underwear</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Jeans</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Cords</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">T-Shirts</a> </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="parent">
+                                                    <p class="plus visible-xs">+</p> <a href="#"><span class="menu-title">Shoes</span><i class="fa fa-angle-down"></i></a>
+                                                    <div class="dropdown drop-grid-6-6">
+                                                        <div class="menu-row row-col-6">
+                                                            <div class="menu-column row-grid-2">
+                                                                <!-- html-->
+                                                                <div class="staticblock">
+                                                                    <a title="Comohos" href="index.html"><img src="images/logo.png" title="Comohos" alt="Comohos">
+                                                                    </a>
+                                                                    <p>Metallic round sunglasses powder blue loafer Prada Saffiano button up print. Crop Saint Laurent lilac sports luxe strong eyebrows la marinière razor pleats shoe statement gold collar. Floral bandeau envelope clutch dove grey Jil Sander Vasari dress. Leggings Lanvin Jil Sander Vasari texture collarless grunge leather tote.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="menu-column row-grid-1">
+                                                                <a href="#" class="parent">Shirts</a>
+                                                                <ul class="column category">
+                                                                    <li class="col-grid-1 "> <a href="#">Sleep &amp; Lounge</a> </li>
+                                                                    <li class="col-grid-1 sub_category"> <a href="#">Sweatshirts<i class="fa fa-angle-right"></i></a>
+                                                                        <div class="sub_menu">
+                                                                            <ul>
+                                                                                <li><a href="#_31">Underwear &amp; Socks</a>
+                                                                                </li>
+                                                                                <li><a href="#_24">Underwear</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Jeans</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Cords</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">T-Shirts</a> </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="menu-column row-grid-1">
+                                                                <a href="#" class="parent">Sweaters</a>
+                                                                <ul class="column category">
+                                                                    <li class="col-grid-1 "> <a href="#">Hoodies &amp; Jackets</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Pants &amp; Shorts</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Outerwear</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Slips &amp; Shapewear</a> </li>
+                                                                    <li class="col-grid-1 "> <a href="#">Sweatshirts</a> </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="menu-column row-grid-2">
+                                                                <!-- html-->
+                                                                <div class="staticblock">
+                                                                    <iframe src="http://player.vimeo.com/video/32448092" height="360" width="640"></iframe>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="parent">
+                                                    <p class="plus visible-xs">+</p> <a href="#"><span class="menu-title">Boys</span><i class="fa fa-angle-down"></i></a>
+                                                    <div class="dropdown drop-grid-6-1">
+                                                        <div class="menu-row row-col-1">
+                                                            <div class="menu-column row-grid-1">
+                                                                <!-- information -->
+                                                                <ul class="column information">
+                                                                    <li class="col-grid-1"><a href="about.html">About Us</a>
+                                                                    </li>
+                                                                    <li class="col-grid-1"><a href="#">Delivery Information</a>
+                                                                    </li>
+                                                                    <li class="col-grid-1"><a href="#">Privacy Policy</a>
+                                                                    </li>
+                                                                    <li class="col-grid-1"><a href="#">Terms &amp; Conditions</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li> <a href="blog.html"><span class="menu-title">Blog</span></a> </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.menubar -->
+                    </div>
+                </div><!-- /.bt-mobile -->
+                <header>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div id="logo">
+                                    <a href="index.html"><img src="images/logo.png" title="Comohos Store" alt="Comohos Store" class="img-responsive" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="bt-search" class="input-group"> <a class="icon_search" href=""><i class="fa fa-search"></i></a>
+                                <div class="search-form">
+                                    <div id="search" class="input-group">
+                                        <input type="text" name="search" value="" placeholder="Search" class="form-control input-lg" /> 
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-default btn-lg"><i class="fa fa-search"></i></button>
+                                          </span> </div>
+                                </div>
+                            </div><!-- /#bt-search -->
+                            <!-- Load menu -->
+                            <div class="menubar">
+                                <div class="container">
+                                    <div class="bt_mainmenu">
+                                        <div class="row">
+                                            <div class="nav-heading"> <a class="open-panel"><b>MENU</b><span><i class="fa fa-bars"></i></span></a> </div>
+                                            <nav class="mega-menu"> <a class="close-panel"><i class="fa fa-times-circle"></i></a>
+                                                <ul class="nav nav-pills">
+                                                    <li> <a href="index.html"><span class="menu-title">Home</span></a> </li>
+                                                    <li class="parent">
+                                                        <p class="plus visible-xs">+</p> <a href="#"><span class="menu-title">Men's</span><i class="fa fa-angle-down"></i></a>
+                                                        <div class="dropdown drop-grid-6-6">
+                                                            <div class="menu-row row-col-6">
+                                                                <div class="menu-column row-grid-2">
+                                                                    <!-- html-->
+                                                                    <div class="staticblock">
+                                                                        <a title="Comohos" href="index.html"><img src="images/logo.png" title="Comohos" alt="Comohos">
+                                                                        </a>
+                                                                        <p>Metallic round sunglasses powder blue loafer Prada Saffiano button up print. Crop Saint Laurent lilac sports luxe strong eyebrows la marinière razor pleats shoe statement gold collar. Floral bandeau envelope clutch dove grey Jil Sander Vasari dress. Leggings Lanvin Jil Sander Vasari texture collarless grunge leather tote.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="menu-column row-grid-1">
+                                                                    <a href="#" class="parent">Sweaters</a>
+                                                                    <ul class="column category">
+                                                                        <li class="col-grid-1 "> <a href="#">Hoodies &amp; Jackets</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Pants &amp; Shorts</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Outerwear</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Slips &amp; Shapewear</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Sweatshirts</a> </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="menu-column row-grid-1">
+                                                                    <a href="#" class="parent">Shirts</a>
+                                                                    <ul class="column category">
+                                                                        <li class="col-grid-1 "> <a href="#">Sleep &amp; Lounge</a> </li>
+                                                                        <li class="col-grid-1 sub_category"> <a href="#">Sweatshirts<i class="fa fa-angle-right"></i></a>
+                                                                            <div class="sub_menu">
+                                                                                <ul>
+                                                                                    <li><a href="#_31">Underwear &amp; Socks</a>
+                                                                                    </li>
+                                                                                    <li><a href="#_24">Underwear</a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Jeans</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Cords</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">T-Shirts</a> </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="menu-column row-grid-1">
+                                                                    <!-- information -->
+                                                                    <ul class="column information">
+                                                                        <li class="col-grid-1"><a href="about.html">About Us</a>
+                                                                        </li>
+                                                                        <li class="col-grid-1"><a href="#">Privacy Policy</a>
+                                                                        </li>
+                                                                        <li class="col-grid-1"><a href="#">Terms &amp; Conditions</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="menu-column row-grid-1">
+                                                                    <ul class="column product">
+                                                                        <!-- product -->
+                                                                        <li class="col-grid-1">
+                                                                            
+                                                                            <div class="image">
+                                                                                <a href="product-detail.html"><img src="images/product/p8-170x204.jpg" alt="Ribbed boots holographic Céline" />
+                                                                                </a>
+                                                                                <br/>
+                                                                            </div>
+                                                                            <div class="name"><a href="product-detail.html">Ribbed boots holographic Céline</a>
+                                                                                <br />
+                                                                            </div>
+                                                                            <div class="price"> $337.99 </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="parent">
+                                                        <p class="plus visible-xs">+</p> <a href="#"><span class="menu-title">Women's</span><i class="fa fa-angle-down"></i></a>
+                                                        <div class="dropdown drop-grid-6-3">
+                                                            <div class="menu-row row-col-3"> <img alt="bg image" src="images/bg_menu.jpg" class="row-bg-image bt-menu-bg">
+                                                                <div class="menu-column row-grid-1">
+                                                                    <a href="#" class="parent">Sweaters</a>
+                                                                    <ul class="column category">
+                                                                        <li class="col-grid-1 "> <a href="#">Hoodies &amp; Jackets</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Pants &amp; Shorts</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Outerwear</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Slips &amp; Shapewear</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Sweatshirts</a> </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="menu-column row-grid-1">
+                                                                    <a href="#" class="parent"> Sweaters</a>
+                                                                    <ul class="column category">
+                                                                        <li class="col-grid-1 "> <a href="#">Hoodies &amp; Jackets</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Pants &amp; Shorts</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Outerwear</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Slips &amp; Shapewear</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Sweatshirts</a> </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="parent">
+                                                        <p class="plus visible-xs">+</p> <a href="#"><span class="menu-title">Bags</span><i class="fa fa-angle-down"></i></a>
+                                                        <div class="dropdown drop-grid-6-1">
+                                                            <div class="menu-row row-col-1">
+                                                                <div class="menu-column row-grid-1">
+                                                                    <a href="#" class="parent">Shirts</a>
+                                                                    <ul class="column category">
+                                                                        <li class="col-grid-1 "> <a href="#">Sleep &amp; Lounge</a> </li>
+                                                                        <li class="col-grid-1 sub_category"> <a href="#">Sweatshirts<i class="fa fa-angle-right"></i></a>
+                                                                            <div class="sub_menu">
+                                                                                <ul>
+                                                                                    <li><a href="#_31">Underwear &amp; Socks</a>
+                                                                                    </li>
+                                                                                    <li><a href="#_24">Underwear</a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Jeans</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Cords</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">T-Shirts</a> </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="parent">
+                                                        <p class="plus visible-xs">+</p> <a href="#"><span class="menu-title">Shoes</span><i class="fa fa-angle-down"></i></a>
+                                                        <div class="dropdown drop-grid-6-6">
+                                                            <div class="menu-row row-col-6">
+                                                                <div class="menu-column row-grid-2">
+                                                                    <!-- html-->
+                                                                    <div class="staticblock">
+                                                                        <a title="Comohos" href="index.html"><img src="images/logo.png" title="Comohos" alt="Comohos">
+                                                                        </a>
+                                                                        <p>Metallic round sunglasses powder blue loafer Prada Saffiano button up print. Crop Saint Laurent lilac sports luxe strong eyebrows la marinière razor pleats shoe statement gold collar. Floral bandeau envelope clutch dove grey Jil Sander Vasari dress. Leggings Lanvin Jil Sander Vasari texture collarless grunge leather tote.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="menu-column row-grid-1">
+                                                                    <a href="#" class="parent">Shirts</a>
+                                                                    <ul class="column category">
+                                                                        <li class="col-grid-1 "> <a href="#">Sleep &amp; Lounge</a> </li>
+                                                                        <li class="col-grid-1 sub_category"> <a href="#">Sweatshirts<i class="fa fa-angle-right"></i></a>
+                                                                            <div class="sub_menu">
+                                                                                <ul>
+                                                                                    <li><a href="#_31">Underwear &amp; Socks</a>
+                                                                                    </li>
+                                                                                    <li><a href="#_24">Underwear</a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Jeans</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Cords</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">T-Shirts</a> </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="menu-column row-grid-1">
+                                                                    <a href="#" class="parent">Sweaters</a>
+                                                                    <ul class="column category">
+                                                                        <li class="col-grid-1 "> <a href="#"> Hoodies &amp; Jackets</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Pants &amp; Shorts</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Outerwear</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Slips &amp; Shapewear</a> </li>
+                                                                        <li class="col-grid-1 "> <a href="#">Sweatshirts</a> </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="menu-column row-grid-2">
+                                                                    <!-- html-->
+                                                                    <div class="staticblock">
+                                                                        <iframe src="http://player.vimeo.com/video/32448092" height="360" width="640"></iframe>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="parent">
+                                                        <p class="plus visible-xs">+</p> <a href="#"><span class="menu-title">Boys</span><i class="fa fa-angle-down"></i></a>
+                                                        <div class="dropdown drop-grid-6-1">
+                                                            <div class="menu-row row-col-1">
+                                                                <div class="menu-column row-grid-1">
+                                                                    <!-- information -->
+                                                                    <ul class="column information">
+                                                                        <li class="col-grid-1"><a href="about.html">About Us</a>
+                                                                        </li>
+                                                                        <li class="col-grid-1"><a href="#">Delivery Information</a>
+                                                                        </li>
+                                                                        <li class="col-grid-1"><a href="#">Privacy Policy</a>
+                                                                        </li>
+                                                                        <li class="col-grid-1"><a href="#">Terms &amp; Conditions</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li> <a href="blog.html"><span class="menu-title">Blog</span></a> </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.menubar -->
+                        </div>
+                    </div>
+                </header>
+                <!-- Load module in position header -->
+            </div><!-- /#bt_header -->
+        
+        <div class="bt-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html"><i class="fa fa-home"></i></a>
+                        </li>
+                        <li><a href="account.html">Account</a>
+                        </li>
+                        <li><a href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /.bt-breadcrumb -->
+        <div class="container">
+            <div class="row">
+                <column id="column-left" class="col-sm-3 hidden-xs">
+                    <div class="box account">
+                        <div class="box-heading">Account</div>
+                        <div class="box-content">
+                            <ul>
+                                <li class="active"><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Register</a></li>
+                                <li><a href="forgotten.html">Forgotten Password</a></li>
+                                <li><a href="account.html">My Account</a></li>
+                                <li><a href="address.html">Address Book</a> </li>
+                                <li><a href="wishlist.html">Wish List</a> </li>
+                                <li><a href="order.html">Order History</a></li>
+                                <li><a href="download.html">Downloads</a></li>
+                                <li><a href="reward.html">Reward Points</a></li>
+                                <li><a href="return.html">Returns</a></li>
+                                <li><a href="transaction.html">Transactions</a></li>
+                                <li><a href="newsletter.html">Newsletter</a></li>
+                                <li><a href="recurring.html">Recurring payments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-delay="200" data-animate="fadeInLeft" class="bt-banner-left fadeInLeft animated">
+                        <a href="#" title="banner left"> <img alt="banner" src="images/banner/banner_left1.jpg"><span class="bg-top">&nbsp;</span> <span class="bg-bottom">&nbsp;</span>
+                        </a>
+                    </div><!-- /.bt-banner-left -->
+                </column><!-- /#column-left -->
+                <div id="content" class="col-sm-9">
+                    <div class="row content-login">
+                        <div class="col-sm-6">
+                            <div class="left">
+                                <h3>New Customer</h3>
+                                <p><strong>Register Account</strong>
+                                </p>
+                                <p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p> <a href="register.html" class="btn btn-gray">Continue</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="right">
+                                <h3>Returning Customer</h3>
+                                <p><strong>I am a returning customer</strong>
+                                </p>
+                                <form method="post" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <label class="control-label" for="input-email">E-Mail Address</label>
+                                        <input type="text" name="email" value="" placeholder="E-Mail Address" id="input-email" class="form-control" /> 
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="input-password">Password</label>
+                                        <input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control" /> 
+                                    </div>
+                                    <input type="submit" value="Login" class="btn btn-gray" /> <a class="forgotten" href="forgotten.html">Forgotten Password</a> 
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /#content -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+
+        <div id="bt_footer">
+            <footer>
+                <div class="bt-footer-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-12">
+                                <div class="footer-about">
+                                    <a href="index.html"><img src="images/logo_footer.png" alt="Comohost" title="Comohost" />
+                                    </a>
+                                    <p>Skort Maison Martin Margiela knot ponytail cami texture tucked t-shirt.<span class="bold-italic"> Black skirt razor pleats plaited gold collar.</span> Crop 90s spearminit indigo seam luxe washed out.</p>
+                                </div>
+                                <div class="footer-contact">
+                                    <ul>
+                                        <li><i class="fa fa-map-marker"></i> <span> &nbsp;249, Ung Van Khiem St., Binh Thanh Dist, HCMC.</span>
+                                        </li>
+                                        <li><i class="fa fa-phone"></i> <span>+084 0123 456 999</span>
+                                        </li>
+                                        <li><i class="fa fa-envelope-o"></i> <span><a href="mailto:support@codespot.vn">support@codespot.vn</a></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a class="facebook" href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a class="pinterest" href="https://www.pinterest.com/" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                                        </li>
+                                        <li><a class="twitter" href="https://twitter.com/" title="Twiter"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a class="google" href="https://plus.google.com/" title="Google plus"><i class="fa fa-google-plus"></i></a>
+                                        </li>
+                                        <li><a class="rss" href="https://www.rss.com/" title="RSS"><i class="fa fa-rss"></i></a>
+                                        </li>
+                                        <li><a class="youtube" href="https://www.youtube.com/" title="YouTube"><i class="fa fa-youtube"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- /.col-md-4 -->
+                            <!-- Load modules in position footer top-->
+                            <div class="col-md-4 col-xs-12">
+                                <div class="box block boss-recent-post">
+                                    <div class="box-heading"> <span>Recent Post</span> </div>
+                                    <div class="box-content block-content">
+                                        <ol>
+                                            <li class="item-recent-post">
+                                                <div class="image">
+                                                    <a class="article-title" href="blog-detail.html"><img src="images/blog/b2-98x70.jpg" alt="Braid slipper dress dungaree " title="Braid slipper dress dungaree " />
+                                                    </a>
+                                                </div>
+                                                <div class="title"> 
+                                                    <a class="article-title" href="blog-detail.html">Braid slipper dress dungaree </a><small class="time-stamp">Dec 22, 2014 </small> 
+                                                </div>
+                                            </li>
+                                            <li class="item-recent-post">
+                                                <div class="image">
+                                                    <a class="article-title" href="blog-detail.html"><img src="images/blog/b1-98x70.jpg" alt="Indigo skirt skirt braid vintage" title="Indigo skirt skirt braid vintage" />
+                                                    </a>
+                                                </div>
+                                                <div class="title"> <a c
+                                                    lass="article-title" href="blog-detail.html">Indigo skirt skirt braid vintage</a> <small class="time-stamp">Dec 22, 2014 </small> 
+                                                </div>
+                                            </li>
+                                            <li class="item-recent-post">
+                                                <div class="image">
+                                                    <a class="article-title" href="blog-detail.html"><img src="images/blog/b5-98x70.jpg" alt="Givenchy playsuit" title="Givenchy playsuit" />
+                                                    </a>
+                                                </div>
+                                                <div 
+                                                    class="title"> <a class="article-title" href="blog-detail.html">Givenchy playsuit</a> <small class="time-stamp">Dec 22, 2014 </small> 
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div><!-- /.col-md-4 -->
+                            <div class="col-md-4 col-xs-12">
+                                <div class="box-tweeter column col-xs-12">
+                                    <div class="tweeter-heading">
+                                        <h3>Recent Tweets</h3>
+                                    </div>
+                                    <div class="tweeter-content">
+                                        <ul id="twitter-list">
+                                            <li class="status-item">
+                                                <div class="tweet-profile"> <a title="@bossthemes1" href="https://twitter.com/bossthemes1"><i class="fa fa-twitter"></i></a> </div>
+                                                <div class="tweet-content">
+                                                    <div class="tweet-name"><span>bossthemes</span>
+                                                    </div>
+                                                    <div class="tweet-text">
+                                                        <p>dolor sit amet Consectetur adipiscing elit Morbi Tincidunt neque vitae</p>
+                                                    </div>
+                                                    <div class="date-time"><a href="http://twitter.com/bossthemes1/statuses/230890474217549827">Thu Aug 02 04:59:13 +0000 2012</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="status-item">
+                                                <div class="tweet-profile"> <a title="@bossthemes1" href="https://twitter.com/bossthemes1"><i class="fa fa-twitter"></i></a> </div>
+                                                <div class="tweet-content">
+                                                    <div class="tweet-name"><span>bossthemes</span>
+                                                    </div>
+                                                    <div class="tweet-text">
+                                                        <p>amet Consectetur adipiscing elit Morbi Tincidunt neque vitae risus @e</p>
+                                                    </div>
+                                                    <div class="date-time"><a href="http://twitter.com/bossthemes1/statuses/230526741523873793">Wed Aug 01 04:53:52 +0000 2012</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!-- /.col-md-4 -->
+                        </div>
+                    </div>
+                </div><!-- /.bt-footer-top -->
+                <div class="bt-footer-middle">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Load modules in position footer newsletter-->
+                            <div class="bt-newsletter col-xs-12">
+                                <div class="footer-newsletter">
+                                    <div class="title"> <span><i class="fa fa-envelope"></i></span>
+                                        <p>Subscribe to receive our news everyday!</p>
+                                    </div>
+                                    <div class="newsletter-content">
+                                        <div id="frm_subscribe">
+                                            <form name="subscribe" id="subscribe">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="boss-newsletter">
+                                                                <input class="form-control input-new" size="50" type="text" placeholder="Enter your email address here" name="subscribe_email" id="subscribe_email"> <a class="btn btn-new"><i class="fa fa-paper-plane"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="display:none;">
+                                                        <td>
+                                                            <input class="form-control input-new" size="50" type="text" value="Enter your email address here" name="subscribe_name" id="subscribe_name">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="subscribe_result"></td>
+                                                    </tr>
+                                                </table>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.bt-footer-middle -->
+                <div class="bt-footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="link">
+                                <ul class="list-unstyled">
+                                    <li><a href="contact.html">Contact Us</a>
+                                    </li>
+                                    <li><a href="#">Site Map</a>
+                                    </li>
+                                    <li><a href="#">Brands</a>
+                                    </li>
+                                    <li><a href="#">Affiliates</a>
+                                    </li>
+                                    <li><a href="#">Specials</a>
+                                    </li>
+                                    <li><a href="#">Newsletter</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="powered-payment">
+                                <div class="row">
+                                    <div class="powered col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div id="powered">
+                                            <p>© 2015 Fashion Store. All rights Reserved.<span> Themes by <a href="http://htmlcooker.com">HTMLCooker</a>.</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="payment col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <ul>
+                                            <li>
+                                                <a title="Visa" href="#" class="visa"><img alt="Visa" src="images/visa.jpg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="MasterCard" href="#" class="masterCard"><img alt="MasterCard" src="images/master_card.jpg" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="Paypal" href="#" class="paypal"><img alt="Paypal" src="images/paypal.jpg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="Merican" href="#" class="merican"><img alt="Merican" src="images/american.jpg" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="DHL" href="#" class="dhl"><img alt="DHL" src="images/dhl.jpg">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.bt-footer-bottom -->
+            </footer>
+        </div><!-- /#bt_footer -->
+        <div id="back_top" class="back_top" title="Back To Top"><span><i class="fa fa-angle-up"></i></span></div>
+    </div>
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/getwidthbrowser.js"></script>
+    <script src="js/cs.bossthemes.js"></script>
+    <script src="js/jquery.jgrowl.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/jquery.smoothscroll.js"></script>
+    <script src="js/carouFredSel-6.2.1.js"></script>
+    <script src="js/isotope.pkgd.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/jquery.tools.min.js"></script>
+    <script src="js/jquery.revolution.min.js"></script>
+    <script src="js/cloud-zoom.1.0.3.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+            /* View Mode */
+            // Article List
+            $('#list-view').on('click',function() {
+                $('#content .article-layout').attr('class', 'article-layout article-list col-xs-12');
+                localStorage.setItem('display', 'list');
+            });
+            // Article Grid
+            $('#grid-view').on('click',function() {
+                // What a shame bootstrap does not take into account dynamically loaded columns
+                cols = $('#column-right, #column-left').length;
+                if (cols == 2) {
+                    $('#content .article-layout').attr('class', 'article-layout article-grid col-md-6 col-xs-12');
+                } else if (cols == 1) {
+                    $('#content .article-layout').attr('class', 'article-layout article-grid col-md-4 col-sm-6 col-xs-12');
+                } else {
+                    $('#content .article-layout').attr('class', 'article-layout article-grid col-md-3 col-sm-4 col-xs-12');
+                }
+                localStorage.setItem('display', 'grid');
+            });
+            if (localStorage.getItem('display') == 'list') {
+                $('#list-view').trigger('click');
+            } else {
+                $('#grid-view').trigger('click');
+            }
+        });
+    </script>
+</body>
+</html>

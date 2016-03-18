@@ -27,6 +27,11 @@
 ===  END CSS TABLE CONTENT  ====
 ============================================ */
 
+div#content.col-sm-9 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 html, html a{
 	-webkit-font-smoothing:antialiased;
 }
@@ -1804,11 +1809,19 @@ h1 + .product-filter{
 }
 .product-thumb .image img,.table  .image img,.box-item .image img,.bt-product-zoom .image img,
  .bt-product-zoom .image-additional img,.relt_product .image img{
-	border:1px solid #eaeaea;
+	/*border:1px solid #eaeaea;*/
 }
 .product-thumb .image{
 	position:relative;
+	width: 100%;
+	height: 100%;
 }
+
+.product-thumb .image:hover{
+
+
+}
+
 .product-layout{
 	transition:all 0.8s ease 0s;
 	-webkit-transition:all 0.8s ease 0s;

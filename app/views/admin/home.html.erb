@@ -1,0 +1,55 @@
+<div class="text-center">
+  <h1 class="visible-sm visible-xs">Portfolio</h1>
+
+  <% @portfolios.in_groups_of(3) do |group| %>
+    <div class="row">
+      <% group.compact.each do |portfolio| %>
+        <div class="col-sm-12 col-md-4">
+          <%=link_to( image_tag( portfolio.picture1, class: "img-responsive img-margin" ),
+                    portfolio_path(portfolio)) if portfolio.picture1.present? %>
+          <h4><%= link_to portfolio.client_name, portfolio_path(portfolio) %></h4>
+          <%= portfolio.description %><br>
+          <% if admin_signed_in? %>
+            <%= link_to 'Show', portfolio, class: "btn btn-primary" %>
+            <%= link_to 'Edit', edit_portfolio_path(portfolio), class: "btn btn-basecamp" %>
+            <%= link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+
+  <% if admin_signed_in? %>
+  <div class="pad-btm">
+    <%= link_to 'New Portfolio', new_portfolio_path, class: "btn btn-basecamp" %>
+  </div>
+  <% end %>
+</div>
+<div class="text-center">
+  <h1 class="titles">Categories</h1>
+
+  <% @categories.in_groups_of(3) do |group| %>
+    <div class="row">
+      <% group.compact.each do |category| %>
+        <div class="col-sm-12 col-md-4">
+          <div class="category-wrapper">
+            <%=link_to( image_tag( category.image, size: "200x200", class: "img-responsive img-margin" ),
+                      category_products_path(category)) if category.image.present? %>
+            <h4><%= link_to category.name, category_products_path(category) %></h4>
+            <% if admin_signed_in? %>
+              <%= link_to 'Show', category, class: "btn btn-primary" %>&nbsp;
+              <%= link_to 'Edit', edit_category_path(category), class: "btn btn-basecamp" %>&nbsp;
+              <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+
+  <%# if admin_signed_in? %>
+  <div class="pad-btm">
+    <%= link_to 'New Category', new_category_path, class: "btn btn-basecamp" %>
+  </div>
+  <%# end %>
+</div>

@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   get "/hardwood_floors" => "hardwood_floors#index"
   get "/stairs" => "stairs#index"
   get "/porcelains/1" => "porcelains#product"
+  get 'admin/home', as: :admin
 devise_for :admins
 end

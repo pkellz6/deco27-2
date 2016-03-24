@@ -12,5 +12,10 @@ Rails.application.routes.draw do
   get "/stairs" => "stairs#index"
   get "/porcelains/1" => "porcelains#product"
   get 'admin/home', as: :admin
+
+  resources :categories do
+  resources :product
+
 devise_for :admins
+end
 end

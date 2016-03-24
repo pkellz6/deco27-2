@@ -12,9 +12,9 @@ class CategoriesController < ApplicationController
 
 
   # GET /categories/new
-  def new
-    @category = Category.new
-  end
+  # def new
+  #   @category = Category.new
+  # end
 
 
 

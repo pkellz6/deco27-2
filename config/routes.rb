@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get 'admin/home', as: :admin
 
   resources :categories do
-  resources :product
+  resources :products
 
 devise_for :admins
 end

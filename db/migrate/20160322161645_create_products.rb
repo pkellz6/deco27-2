@@ -4,7 +4,7 @@ class CreateProducts < ActiveRecord::Migration
       t.string :name
       t.string :image_1
       t.string :image_2
-      t.string :category_name
+      t.string :category
 
       t.timestamps null: false
     end

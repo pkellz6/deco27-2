@@ -1,0 +1,105 @@
+<body class="">
+            <!-- End #bt_header -->
+            <div class="text-center">
+      <h1 class="titles">Categories</h1>
+      <% if @categories.present? %>
+      <% @categories.in_groups_of(3) do |group| %>
+        <div class="row">
+          <% group.compact.each do |category| %>
+            <div class="col-sm-12 col-md-4">
+              <div class="category-wrapper">
+                <%=link_to( image_tag( category.image, size: "200x200", class: "img-responsive img-margin" ),
+                          category_products_path(category)) if category.image.present? %>
+                <h4><%= link_to category.name, category_products_path(category) %></h4>
+                <% if admin_signed_in? %>
+                  <%= link_to 'Show', category, class: "btn btn-primary" %>&nbsp;
+                  <%= link_to 'Edit', edit_category_path(category), class: "btn btn-basecamp" %>&nbsp;
+                  <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+                <% end %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+      <% end %>
+
+      <% if admin_signed_in? %>
+      <div class="pad-btm">
+        <%= link_to 'New Category', new_category_path, class: "btn btn-basecamp" %>
+      </div>
+      <% end %>
+    </div>
+    <script src="../javascripts/jquery-2.1.1.min.js"></script>
+    <script src="../javascripts/bootstrap.min.js"></script>
+    <script src="../javascripts/getwidthbrowser.js"></script>
+    <script src="../javascripts/cs.bossthemes.js"></script>
+    <script src="../javascripts/jquery.jgrowl.js"></script>
+    <script src="../javascripts/jquery.appear.js"></script>
+    <script src="../javascripts/video.js"></script>
+    <script src="../javascripts/jquery.smoothscroll.js"></script>
+    <script src="../javascripts/carouFredSel-6.2.1.js"></script>
+    <script src="../javascripts/isotope.pkgd.js"></script>
+    <script src="../javascripts/plugins.js"></script>
+    <script src="../javascripts/jquery.tools.min.js"></script>
+    <script src="../javascripts/jquery.revolution.min.js"></script>
+    <script src="../javascripts/cloud-zoom.1.0.3.js"></script>
+    <script src="../javascripts/custom.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+
+            boss_quick_shop();
+            dataAnimate();
+
+            /* View Mode */
+            // Product List
+            $('#list-view').on('click',function() {
+                $('#content .product-layout').attr('class', 'product-layout product-list col-xs-12');
+                localStorage.setItem('display', 'list');
+            });
+            // Product Grid
+            $('#grid-view').on('click',function() {
+                // What a shame bootstrap does not take into account dynamically loaded columns
+                cols = $('#column-right, #column-left').length;
+                if (cols == 2) {
+                    $('#content .product-layout').attr('class', 'product-layout product-grid col-lg-6 col-md-6 col-sm-6 col-xs-12');
+                } else if (cols == 1) {
+                    $('#content .product-layout').attr('class', 'product-layout product-grid col-lg-4 col-md-4 col-sm-4 col-xs-12');
+                } else {
+                    $('#content .product-layout').attr('class', 'product-layout product-grid col-lg-3 col-md-3 col-sm-3 col-xs-12');
+                }
+                localStorage.setItem('display', 'grid');
+            });
+            if (localStorage.getItem('display') == 'list') {
+                $('#list-view').trigger('click');
+            } else {
+                $('#grid-view').trigger('click');
+            }
+        });
+        /* Modal Quick Shop */
+        $('#myModal').on('shown.bs.modal', function (e) {
+            $.fn.CloudZoom.defaults = {
+                adjustX: 0,
+                adjustY: 0,
+                tint: '#FFF',
+                tintOpacity: 0.5,
+                softFocus: 0,
+                lensOpacity: 0.7,
+                zoomWidth: '450',
+                zoomHeight: '552',
+                position: 'inside',
+                showTitle: 0,
+                titleOpacity: 0.5,
+                smoothMove: '3'
+            };
+            $('.cloud-zoom, .cloud-zoom-gallery').CloudZoom();
+        })
+        /* Quick Shop */
+        function boss_quick_shop(){
+            $('.product-thumb').each(function(index, value){
+                var _qsHref = '<button class=\"btn-quickshop\" title =\"Quick Shop\" class=\"sft_quickshop_icon \" data-toggle=\"modal\" data-target=\"#myModal\"><i class="fa fa-eye"></i></button>';
+                $('.button-group', this).append(_qsHref);
+            });
+        }
+    </script>
+</body>
+</html>

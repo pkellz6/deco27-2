@@ -21,18 +21,18 @@
                                     <div class="nav-heading"> <a class="open-panel"><b>MENU</b><span><i class="fa fa-bars"></i></span></a> </div>
                                     <nav class="mega-menu"> <a class="close-panel"><i class="fa fa-times-circle"></i></a>
                                         <ul class="nav nav-pills">
-                                            <li> <a href="/"><span class="menu-title">Home</span></a> </li>
+                                            <li><span class="menu-title"><%= link_to 'Home', root_path %>/span></a> </li>
                                             <li class="parent">
-                                                <p class="plus visible-xs">+</p> <a href="/categories"><span class="menu-title">Categories</span><i class="fa fa-angle-down"></i></a>
+                                                <p class="plus visible-xs">+</p><span class="menu-title"><%= link_to"CATEGORIES", categories_path, class:'categories' %></span><i class="fa fa-angle-down"></i></a>
                                                 <div class="dropdown drop-grid-6-1">
                                                     <div class="menu-row row-col-1">
                                                         <div class="menu-column row-grid-1">
                                                             <ul class="column category">
-                                                              <li class="col-grid-1 "><%= link_to"PORCELAINS", porcelains_path %></li>
-                                                              <li class="col-grid-1 "><%= link_to"DOORS", doors_path %></li>
-                                                              <li class="col-grid-1 "><%= link_to"WALLS", walls_path %></li>
-                                                              <li class="col-grid-1 "><%= link_to"HARDWOOD FLOORS", hardwood_floors_path %></li>
-                                                              <li class="col-grid-1 "><%= link_to"STAIRS", stairs_path %></li>
+                                                              <li class="col-grid-1 "><%= link_to"PORCELAINS", categories_path %></li>
+                                                              <li class="col-grid-1 "><%= link_to"DOORS", categories_path %></li>
+                                                              <li class="col-grid-1 "><%= link_to"WALLS", categories_path %></li>
+                                                              <li class="col-grid-1 "><%= link_to"HARDWOOD FLOORS", categories_path %></li>
+                                                              <li class="col-grid-1 "><%= link_to"STAIRS", categories_path %></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -55,7 +55,7 @@
                     <div class="row">
                         <div class="col-sm-3">
                             <div id="logo">
-                                <a href="/"><img src="images/Decotestlogo.svg" title="Comohos Store" alt="Comohos Store" class="img-responsive" />
+                                <a href="/"><img src="../images/Decotestlogo.svg" title="Comohos Store" alt="Comohos Store" class="img-responsive" />
                                 </a>
                             </div>
                         </div>
@@ -79,16 +79,16 @@
                                                 <li> <a href="/"><span class="menu-title">Home</span></a> </li>
 
                                                 <li class="parent">
-                                                    <p class="plus visible-xs">+</p> <a href="/categories"><span class="menu-title">Categories</span><i class="fa fa-angle-down"></i></a>
+                                                    <p class="plus visible-xs">+</p><span class="menu-title"><%= link_to"Categories", categories_path, class:'categories' %></span><i class="fa fa-angle-down"></i></a>
                                                     <div class="dropdown drop-grid-6-1">
                                                         <div class="menu-row row-col-1">
                                                             <div class="menu-column row-grid-1">
                                                                 <ul class="column category">
-                                                                  <li class="col-grid-1 "><%= link_to"PORCELAINS", porcelains_path %></li>
-                                                                  <li class="col-grid-1 "><%= link_to"DOORS", doors_path %></li>
-                                                                  <li class="col-grid-1 "><%= link_to"WALLS", walls_path %></li>
-                                                                  <li class="col-grid-1 "><%= link_to"HARDWOOD FLOORS", hardwood_floors_path %></li>
-                                                                  <li class="col-grid-1 "><%= link_to"STAIRS", stairs_path %></li>
+                                                                  <li class="col-grid-1 "><%= link_to"PORCELAINS", categories_path %></li>
+                                                                  <li class="col-grid-1 "><%= link_to"DOORS", categories_path %></li>
+                                                                  <li class="col-grid-1 "><%= link_to"WALLS", categories_path %></li>
+                                                                  <li class="col-grid-1 "><%= link_to"HARDWOOD FLOORS", categories_path %></li>
+                                                                  <li class="col-grid-1 "><%= link_to"STAIRS", categories_path %></li>
                                                                 </ul>
                                                             </div>
                                                         </div>

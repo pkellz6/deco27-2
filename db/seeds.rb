@@ -5,9 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Admin.create email: 'patrick@dvlper.com', password: '1234567890'
 
-Category.new(name: "Porcelains")
-Category.new(name: "Doors")
-Category.new(name: "Walls")
-Category.new(name: "Hardwood Floors")
-Category.new(name: "Stairs")
+Category.create(name: "Porcelains")
+Category.create(name: "Doors")
+Category.create(name: "Walls")
+Category.create(name: "Hardwood Floors")
+Category.create(name: "Stairs")

@@ -349,6 +349,7 @@
 	.mega-menu > ul.nav > li p.plus{
 		color: #fff;
 		cursor: pointer;
+		text-transform: uppercase;
 		height: 28px;
 		margin-top: 0;
 		padding-bottom: 1px;
@@ -362,6 +363,10 @@
 		line-height:24px;
 		z-index: 999;
 	}
+
+a.categories {
+	text-transform: uppercase;
+}
 
 li.parent  {
 	text-transform: uppercase;

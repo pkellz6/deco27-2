@@ -3,7 +3,7 @@
 /*================================================================================ */
 .content{
 	z-index: 10;
-}	
+}
 /* Bigger then standard 960px (1280px) */
 	@media only screen and (min-width: 1280px) {
 	}
@@ -18,7 +18,7 @@
 	}
 	/*ipad 2 ngang*/
 	@media only screen and (min-width: 1024px) and (max-width: 1279px) {
-		body{-webkit-text-size-adjust: none;}		
+		body{-webkit-text-size-adjust: none;}
 		header>.container>.row .col-sm-3{width:auto;}
 		#top #top-links.pull-right{width:80%;}
 		#logo img{width:85%;}
@@ -58,11 +58,11 @@
 		.product-info .button-group .btn-wishlist, .product-info .button-group .btn-compare{font-size:0;width:48%;}
 	}
 	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {		
-		
+	@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+
 	}
 	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 1024px) {	
+	@media only screen and (max-width: 1024px) {
 		body{-webkit-text-size-adjust: none; }
 		.popular-cate .box-content .prev{left:15px}
 		.popular-cate .box-content .next{right:15px}
@@ -71,7 +71,7 @@
 		.button-group.button-grid .btn-cart {width: calc(100% - 80px);}
 		.product-related .relt_product .image img{width:100%;}
 	}
-	@media only screen and (min-width: 768px) and (max-width: 1024px) {	
+	@media only screen and (min-width: 768px) and (max-width: 1024px) {
 		.popular-cate .box-content .carousel-content .cate-image img{width:100%;}
 		.product-filter .link-compare{width:24%;}
 		#content.col-sm-6 .product-filter .link-compare{width:45%;padding-left:12px;}
@@ -91,7 +91,7 @@
 		.cart-info .table tbody tr td.quantity button{padding:0;}
 	}
 	/* Tablet Portrait size to standard 960 (devices and browsers) ipad doc */
-	@media only screen and (min-width: 768px) and (max-width: 1023px) {		
+	@media only screen and (min-width: 768px) and (max-width: 1023px) {
 		.common-home #bt_header {position: static;}
 		#top #top-links.pull-right {width:70%;}
 		#top ul.list-inline{margin-right:25px;}
@@ -175,8 +175,8 @@
 		.another-language .product-filter .limit-sort {width:100%;border-top:1px solid #eaeaea}
 		.another-language  .product-filter .box_sort select{width: 140px;}
 	}
-	@media only screen and(max-width: 991px) {		
-		.container {width: 748px;}
+	@media only screen and(max-width: 991px) {
+		.container {width: 100%;}
 	}
 
 	/* All Mobile Sizes (devices and browser) */
@@ -316,9 +316,9 @@
 		.cart-info .table tbody tr td.quantity .input-group{margin:0;}
 		.bt-breadcrumb +.row .alert {margin-left:10px; margin-right:10px;}
 	}
-	
+
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {		
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
 		body{-webkit-text-size-adjust: none; }
 		.currency, .language{margin-right:15px;}
 		.right-to-left .currency,.right-to-left .language{margin-right:0;}
@@ -353,7 +353,7 @@
 		.bt-block-theme-features .box-content .item-theme-features{margin-bottom:30px;}
 		.bt-block-theme-features .box-content .item-theme-features a.image:hover:before{ box-shadow: 0 0 0 130px rgba(0, 0, 0, 0.3) inset;}
 	}
-	@media only screen and (max-width: 630px) { 
+	@media only screen and (max-width: 630px) {
 		.right-to-left 	#top ul.list-inline{float:right;text-align:right}
 		#top ul.list-inline{float:left}
 		.block-shopnow .left .title { top:6%;}
@@ -388,7 +388,7 @@
 		.bt-featured-pro .bt-product-content .bt-item-extra.element-4.even{margin-left:9px;}
 	}
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) { 
+	@media only screen and (max-width: 479px) {
 		body{-webkit-text-size-adjust: none;}
 		#top  #top-links.pull-left {width:100%;margin-bottom:5px;text-align:center;}
 		#top #top-links.pull-right{width:100%;}
@@ -467,5 +467,3 @@
 		.block-shopnow .right .title .cate-name {margin-bottom: 12px;}
 		.block-shopnow .title > a{font-size:8px; padding:2px 18px;}
 	}
-	
-

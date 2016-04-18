@@ -133,7 +133,7 @@ select.form-control, textarea.form-control, input[type="text"].form-control, inp
 img.img-responsive {
 	position: relative;
 	top: 20px;
-	left: 20px;
+	left: 14px;
 	padding-bottom: 20px;
 }
 

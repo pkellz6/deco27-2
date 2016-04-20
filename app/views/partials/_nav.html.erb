@@ -111,3 +111,121 @@
         </div>
         <!-- End #bt_header -->
 </div>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/getwidthbrowser.js"></script>
+<script src="js/cs.bossthemes.js"></script>
+<script src="js/jquery.jgrowl.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/video.js"></script>
+<script src="js/jquery.smoothscroll.js"></script>
+<script src="js/carouFredSel-6.2.1.js"></script>
+<script src="js/isotope.pkgd.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/jquery.tools.min.js"></script>
+<script src="js/jquery.revolution.min.js"></script>
+<script src="js/cloud-zoom.1.0.3.js"></script>
+<script src="js/custom.js"></script>
+<!--[if IE 8]>
+<script type="text/javascript">
+$(window).scroll(function() {
+        var height_header = $('#bt_header').height();
+        if($('html').scrollTop() > height_header) {
+            $('header').addClass('boss_scroll');
+        } else {
+            $('header').removeClass('boss_scroll');
+        }
+    });
+</script>
+<![endif]-->
+<script>
+    jQuery(document).ready(function() {
+        /* Main Slider */
+        $('.tp-banner0').show().revolution({
+            dottedOverlay: "none",
+            delay: 5000,
+            startWithSlide: 0,
+            startwidth: 1920,
+            startheight: 818,
+            hideThumbs: 10,
+            hideTimerBar: "on",
+            thumbWidth: 50,
+            thumbHeight: 50,
+            thumbAmount: 4,
+            navigationType: "none",
+            navigationArrows: "solo",
+            navigationStyle: "round",
+            touchenabled: "on",
+            onHoverStop: "on",
+            swipe_velocity: 0.7,
+            swipe_min_touches: 1,
+            swipe_max_touches: 1,
+            drag_block_vertical: false,
+            parallax: "mouse",
+            parallaxBgFreeze: "on",
+            parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
+            keyboardNavigation: "off",
+            navigationHAlign: "center",
+            navigationVAlign: "bottom",
+            navigationHOffset: 0,
+            navigationVOffset: 20,
+            soloArrowLeftHalign: "left",
+            soloArrowLeftValign: "center",
+            soloArrowLeftHOffset: 50,
+            soloArrowLeftVOffset: 8,
+            soloArrowRightHalign: "right",
+            soloArrowRightValign: "center",
+            soloArrowRightHOffset: 50,
+            soloArrowRightVOffset: 8,
+            shadow: 0,
+            fullWidth: "on",
+            fullScreen: "off",
+            spinner: "spinner4",
+            stopLoop: "on",
+            stopAfterLoops: -1,
+            stopAtSlide: -1,
+            shuffle: "off",
+            autoHeight: "off",
+            forceFullWidth: "off",
+            hideThumbsOnMobile: "off",
+            hideNavDelayOnMobile: 1500,
+            hideBulletsOnMobile: "off",
+            hideArrowsOnMobile: "off",
+            hideThumbsUnderResolution: 0,
+            hideSliderAtLimit: 0,
+            hideCaptionAtLimit: 500,
+            hideAllCaptionAtLilmit: 500,
+            videoJsPath: "rs-plugin/videojs/",
+            fullScreenOffsetContainer: ""
+        });
+
+        boss_quick_shop();
+    });
+
+
+    /* Modal Quick Shop */
+    $('#myModal').on('shown.bs.modal', function (e) {
+        $.fn.CloudZoom.defaults = {
+            adjustX: 0,
+            adjustY: 0,
+            tint: '#FFF',
+            tintOpacity: 0.5,
+            softFocus: 0,
+            lensOpacity: 0.7,
+            zoomWidth: '450',
+            zoomHeight: '552',
+            position: 'inside',
+            showTitle: 0,
+            titleOpacity: 0.5,
+            smoothMove: '3'
+        };
+        $('.cloud-zoom, .cloud-zoom-gallery').CloudZoom();
+    })
+    /* Quick Shop */
+    function boss_quick_shop(){
+        $('.product-thumb').each(function(index, value){
+            var _qsHref = '<button class=\"btn-quickshop\" title =\"Quick Shop\" class=\"sft_quickshop_icon \" data-toggle=\"modal\" data-target=\"#myModal\"><i class="fa fa-eye"></i></button>';
+            $('.button-group', this).append(_qsHref);
+        });
+    }
+</script>

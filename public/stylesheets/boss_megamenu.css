@@ -328,8 +328,6 @@
 	.mega-menu > ul.nav > li > a{
 		border: medium none;
 		color:#fff
-		text-transform: uppercase;
-		font-size: medium;
 	}
 
 	a.home {

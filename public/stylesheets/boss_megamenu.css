@@ -274,6 +274,17 @@
 		-webkit-transition:all 0.5s ease 0s;
 
 	}
+
+div.bt-mobile {
+	z-index: 9999;
+}
+
+#content {
+	z-index: -5;
+}
+.common-home {
+	z-index: -5;
+}
 	.openNav  .open-bt-mobile {z-index:0;}
 	.right-to-left  .open-bt-mobile {right:10px;left:auto;}
 	.open-bt-mobile  i{font-size:18px;vertical-align:top;line-height:26px;}
@@ -328,6 +339,8 @@
 	.mega-menu > ul.nav > li > a{
 		border: medium none;
 		color:#fff
+		text-transform: uppercase;
+		font-size: medium;
 	}
 
 	a.home {

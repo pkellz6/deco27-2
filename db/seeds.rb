@@ -12,10 +12,3 @@ Category.create(name: "Doors")
 Category.create(name: "Walls")
 Category.create(name: "Hardwood Floors")
 Category.create(name: "Stairs")
-
-
-Product.create(name: "Porcelains1")
-Product.create(name: "Doors1")
-Product.create(name: "Walls1")
-Product.create(name: "Hardwood Floors1")
-Product.create(name: "Stairs1")

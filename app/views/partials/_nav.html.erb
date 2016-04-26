@@ -2,7 +2,10 @@
             <nav id="top">
                 <div class="container">
                     <div class="row">
-                        <div id="left_top_links" class="nav pull-left"> <a href="contact.html"><i class="fa fa-phone"></i> <span> 305-859-4848</span></a> </div>
+                        <div id="left_top_links" class="nav pull-left"> <a href="contact.html"><i class="fa fa-phone"></i> <span> 305-859-4848</span></a>
+                          <span><% if admin_signed_in? %>
+          <%= link_to "Sign Out", destroy_admin_session_path, method: :delete, class: "btn" %>
+          <% end %></span> </div>
                 </div>
             </nav>
             <div class="container">

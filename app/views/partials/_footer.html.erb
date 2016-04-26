@@ -11,8 +11,7 @@
                         </div>
                         <div class="footer-contact">
                             <ul>
-                                <li><i class="fa fa-map-marker"></i> <span> &nbsp2646 SW 28 Lane.  (US1 SW 27 Ave).
-Miami, Fl 33133</span>
+                                <li><i class="fa fa-map-marker"></i> <span> &nbsp2646 SW 28 Lane.  (US1 SW 27 Ave). Miami, Fl 33133</span>
                                 </li>
                                 <li><i class="fa fa-phone"></i> <span>305-859-4848</span>
                                 </li>
@@ -129,6 +128,14 @@ Miami, Fl 33133</span>
                             </li>
                             <li><a href="#">Newsletter</a>
                             </li>
+                            <% if admin_signed_in? %>
+                               <li><%= link_to current_admin.email, admin_path,  class: "btn #{'active' if current_page?(admin_path)}" %></li>
+                               <li><%= link_to 'Sign Out', destroy_admin_session_path, method: :delete, class: "btn" %></li>
+                             <% else %>
+                               <li>
+                                 <%= link_to 'Sign In', new_admin_session_path, class: "btn #{'active' if current_page?(new_admin_session_path)}" %>
+                               </li>
+                             <% end %>
                         </ul>
                     </div>
                     <div class="powered-payment">

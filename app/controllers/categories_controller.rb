@@ -6,7 +6,7 @@ class CategoriesController < ApplicationController
   # GET /categories.json
   def index
     @categories = Category.all
-    @products = Category.all.reject{ |category| category.try(:products).blank? }.sample.try(:products)
+    @products = Product.all#.reject{ |category| category.try(:products).blank? }.sample.try(:products)
   end
 
   # GET /categories/1

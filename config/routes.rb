@@ -19,13 +19,10 @@ Rails.application.routes.draw do
   devise_scope :admin do
     get 'sign_in', :to => 'devise/sessions#new', as: :sign_in
     get 'sign_up', :to => 'devise/registrations#new', as: :sign_up
-    get 'sign_out', :to => 'devise/sessions#destroy', as: :sign_out  end
+    get 'sign_out', :to => 'devise/sessions#destroy', as: :sign_out  
+  end
 
   resources :categories do
-  resources :products
-
-end
-
-
-
+    resources :products
+  end
 end

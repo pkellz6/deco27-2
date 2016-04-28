@@ -8,8 +8,8 @@
           <% group.compact.each do |category| %>
             <div class="col-sm-12 col-md-4">
               <div class="category-wrapper">
-                <%=link_to( image_tag( category.image, size: "200x200", class: "img-responsive img-margin" ),
-                          category_products_path(category)) if category.image.present? %>
+                <%=link_to( image_tag( category.picture, size: "200x200", class: "img-responsive img-margin" ),
+                          category_products_path(category)) if category.picture.present? %>
                 <h4><%= link_to category.name, category_products_path(category) %></h4>
                 <% if admin_signed_in? %>
                   <%= link_to 'Show', category, class: "btn btn-primary" %>&nbsp;

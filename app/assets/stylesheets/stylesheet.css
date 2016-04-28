@@ -1388,13 +1388,13 @@ footer .bt-footer-middle h3,.bt-footer-middle .bt-block-footer a{
   position: relative;
   width: 14px;
   height: 14px;
-  background-image: url("../images/bg_none_check.png");
+  background-image: url("/assets/bg_none_check.png");
   background-repeat: no-repeat;
   background-position: center center;
   display: inline-block;
 }
 .bt-filter li.active a span.fe-checkbox {
-  background-image: url("../images/bg_check.png");
+  background-image: url("/assets/bg_check.png");
 }
 .box.bt-filter  .box-content  .list .checkbox{
 	font-size:13px;
@@ -1766,7 +1766,7 @@ h1 + .product-filter{
 	position:absolute;
 	top:0;
 	right:0;
-	background:url("../images/box_sort.jpg") no-repeat;
+	background:url("/assets/box_sort.jpg") no-repeat;
 	display:block;
 	height:100%;
 	width:28px;
@@ -3625,7 +3625,7 @@ p +.content-login{
 	top:0;
 	width:100%;
 	height:100%;
-	background:url('../images/viewmore_bg.png')no-repeat center center;
+	background:url('/assets/viewmore_bg.png')no-repeat center center;
 	transition: all 0.3s ease 0.1s;
 	-webkit-transition: all 0.3s ease 0.1s;
 	-moz-transition: all 0.3s ease 0.1s;

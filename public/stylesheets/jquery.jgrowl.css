@@ -109,7 +109,7 @@ div.jGrowl div.jGrowl-notification div.jGrowl-message{
 }
 
 div.jGrowl div.jGrowl-notification div.jGrowl-header span{
-	background:url(../images/check.png) no-repeat left 3px;
+	background:url(/assets/check.png) no-repeat left 3px;
 	padding-left:22px;
 	
 }
@@ -143,7 +143,7 @@ div.jGrowl div.jGrowl-notification div.jGrowl-close {
 	position:absolute;
 	right:0;
 	top:7px;
-	background:url(../images/remove.png) no-repeat;
+	background:url(/assets/remove.png) no-repeat;
 	color:#fff;
 }
 .right-to-left div.jGrowl div.jGrowl-notification div.jGrowl-close{

@@ -28,6 +28,10 @@ gem 'devise'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'pg'
 gem 'rails_admin'
+#Paper clip for uploading files
+gem 'paperclip'
+#Help storing paper clip's file to S3
+gem 'aws-sdk', '~> 1.5.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -46,4 +50,10 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem 'better_errors'
+  gem 'binding_of_caller'
+
+  gem 'awesome_print'
+  gem 'dotenv-deployment'
 end

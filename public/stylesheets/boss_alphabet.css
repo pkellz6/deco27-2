@@ -1,0 +1,42 @@
+.box  .bt-alphabet {
+	overflow: hidden;
+	margin: 10px 0;
+}
+.box .boss-alphabet ul{
+	padding-left:0;
+}
+.box .boss-alphabet ul li{
+    display: inline;
+    float: left;
+    list-style: none outside none;
+    text-align: center;
+    text-transform: uppercase;
+	transition:all 0.3s ease 0s;
+	-moz-transition:all 0.3s ease 0s;
+	-webkit-transition:all 0.3s ease 0s;
+}
+
+
+.box .boss-alphabet ul li a{
+	display: block;
+    font-size: 11px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+	border: 1px solid #eaeaea;
+	height: 24px;
+	width: 24px;
+	background-color:#FFFFFF;
+	margin-right:4px;
+	margin-bottom:4px;
+	font-family:Arial,sans-serif;
+	color:#868585;
+	transition:all 0.3s ease 0s;
+	-moz-transition:all 0.3s ease 0s;
+	-webkit-transition:all 0.3s ease 0s;
+ }
+.box .boss-alphabet ul li a:hover{
+	color:#fff;
+	background-color:#7db998;
+	border: 1px solid #7db998;
+}

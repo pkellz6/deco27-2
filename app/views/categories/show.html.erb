@@ -2,7 +2,7 @@
 
 <div class="text-center">
   <h2><%= @category.name %></h2>
-  <%= image_tag(@category.image, class: "img-responsive img-margin") %>
+  <%= image_tag(@category.picture, class: "img-responsive img-margin") %>
 
   <%= link_to 'Products', category_products_path(@category), class: "btn btn-primary" %> |
   <%= link_to 'Back', categories_path, class: "btn btn-basecamp" %>

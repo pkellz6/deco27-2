@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>Deco27</title>
-  <%= stylesheet_link_tag    'application', media: 'all'%>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
   <%= csrf_meta_tags %>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -29,8 +29,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet" type="text/css" />
 
-  <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" />
-  <link rel="stylesheet" type="text/css" href="../stylesheets/boss_megamenu.css" />
+  <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/stylesheet.css" />
+  <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/boss_megamenu.css" />
 
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>

@@ -2,7 +2,6 @@
 <html>
 <head>
   <title>Deco27</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
   <%= csrf_meta_tags %>
   <meta charset="utf-8">
@@ -43,6 +42,7 @@
   <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/isotope.css" />
   <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/bossblog.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/revolutionslider_settings.css" media="screen" />
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
 
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>

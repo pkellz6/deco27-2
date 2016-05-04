@@ -1,0 +1,61 @@
+$loading-background-color: #CF8C7C;
+$link-hover-color: #8E4346;
+$nav-hover-color: #C02C32;
+
+$shop-now-background: #bd3e3b;
+$shop-now-border: #892C2A;
+$shop-now-color: rgba(255, 255, 255, 0.6);
+$shop-now-color-hover: white;
+
+$dropdown-border: #8E4346;
+
+#logo {
+	a {
+		position: relative;
+		top: 10px;
+	}
+}
+
+.circularG {
+	background-color: $loading-background-color;
+}
+
+#top {
+	padding: 12px 0;
+}
+
+#top a:hover, 
+#top li.dropdown.open> a, 
+#top .btn-group.open >.btn, 
+#top .dropdown-menu>li>a:hover, 
+.currency .btn:hover, 
+.language .btn:hover {
+	color: $link-hover-color;
+}
+
+#top .bt-language {
+	letter-spacing: 2px;
+}
+
+.mega-menu > ul.nav > li >a:hover, .mega-menu > ul.nav > li >a:focus {
+	color: $nav-hover-color;
+}
+
+.mega-menu a:hover {
+	color: $nav-hover-color;
+}
+
+.block-shopnow .title>a {
+	background: $shop-now-background;
+	border: 1px solid $shop-now-border;
+	color: $shop-now-color;
+}
+
+.block-shopnow .title>a:hover {
+	border: 1px solid $shop-now-color-hover;
+	color: $shop-now-color-hover;
+}
+
+.mega-menu > ul.nav > li .dropdown {
+	border-bottom: 3px solid $dropdown-border;
+}

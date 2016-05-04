@@ -13,126 +13,11 @@
   nav#top
     .container
       .row
-        #left_top_links.nav.pull-left
-          a href="contact.html" 
-            i.fa.fa-phone
-            span HOTLINE: 111-111-1111
         #right_top_links.nav.pull-right
-          .pull-right
-            #cart.btn-group.btn-block
-              button.btn.btn-inverse.btn-block.btn-lg.dropdown-toggle data-loading-text="Loading..." data-toggle="dropdown" type="button" 
-                i.fa.fa-shopping-cart
-                span#cart-total 2 item(s) - $316.00
-              ul.dropdown-menu.pull-right
-                li
-                  table.table.table-striped
-                    tr
-                      td.text-left.image
-                        .image
-                          a href="product-detail.html" 
-                            img.img-thumbnail alt=("Cashmere cuff vintage Levi maxi") src="images/product/p21-115x131.jpg" title=("Cashmere cuff vintage Levi maxi") /
-                          .remove
-                            button.btn-danger title="Remove" type="button" 
-                              i.fa.fa-times
-                      td.text-left.name
-                        a href="product-detail.html"  Cashmere cuff vintage Levi maxi
-                        br/
-                        | \-
-                        small Color Pink
-                        div
-                          | 2 x
-                          span.price $316.00
-                li
-                  .cart_bottom
-                    table.minicart_total
-                      tr
-                        td.text-left
-                          span Sub-Total
-                        td.text-right $260.00
-                      tr
-                        td.text-left
-                          span Eco Tax (-2.00)
-                        td.text-right $4.00
-                      tr
-                        td.text-left
-                          span VAT (20%)
-                        td.text-right $52.00
-                      tr
-                        td.text-left
-                          span Total
-                        td.text-right $316.00
-                    .buttons
-                      span.cart_bt
-                        a.btn href="cart.html"  View Cart
-                      span.checkout_bt
-                        a.btn.btn-shopping href="checkout.html"  Checkout
-          .bt-language
-            form.language enctype="multipart/form-data" method="post" 
-              .btn-group
-                button.btn.btn-link.dropdown-toggle data-toggle="dropdown" 
-                  img alt="English" src="images/flags/gb.png" title="English" /
-                  span en
-                  i.fa.fa-angle-down
-                ul.dropdown-menu
-                  li
-                    a href="en" 
-                      span.text-left English
-                      span.text-right
-                        img alt="English" src="images/flags/gb.png" title="English" /
-                  li
-                    a href="de" 
-                      span.text-left Deutsch
-                      span.text-right
-                        img alt="Deutsch" src="images/flags/de.png" title="Deutsch" /
-              input name="code" type="hidden" value="" /
-              input name="redirect" type="hidden" value="" /
-          /! /.bt-language
-          .bt-currency
-            form.currency enctype="multipart/form-data" method="post" 
-              .btn-group
-                button.btn.btn-link.dropdown-toggle data-toggle="dropdown" 
-                  strong $
-                  span USD
-                  i.fa.fa-angle-down
-                ul.dropdown-menu
-                  li
-                    button.currency-select.btn.btn-link name="EUR" type="button" 
-                      span Euro
-                      span €
-                  li
-                    button.currency-select.btn.btn-link name="GBP" type="button" 
-                      span Pound Sterling
-                      span £
-                  li
-                    button.currency-select.btn.btn-link name="USD" type="button" 
-                      span US Dollar
-                      span $
-              input name="code" type="hidden" value="" /
-              input name="redirect" type="hidden" value="" /
-          /! /.bt-currency
-          ul.list-inline
-            li.dropdown
-              a.dropdown-toggle data-toggle="dropdown" href="#" title=("My Account") 
-                span
-                  i.fa.fa-user
-                  | My Account
-                i.fa.fa-angle-down
-              ul.dropdown-menu.dropdown-menu-right
-                li
-                  a href="register.html" 
-                    span Register
-                    span
-                      i.fa.fa-unlock-alt
-                li
-                  a href="login.html" 
-                    span Login
-                    span
-                      i.fa.fa-user
-            li
-              a#wishlist-total href="wishlist.html" title=("Wish List (0)") 
-                span
-                  i.fa.fa-heart
-                  | Wish List (0)
+        	.bt-language
+	          a href= contact_path
+	            i.fa.fa-phone
+	            span HOTLINE: 111-111-1111
   .container
     .row
       .bt-content-menu style=("float: left; width: 100%; clear: both; height: 1px;") 
@@ -142,57 +27,8 @@
     .menu_mobile
       a.close-panel
         i.fa.fa-times-circle
-      .bt-language
-        form.language enctype="multipart/form-data" method="post" 
-          .btn-group
-            button.btn.btn-link.dropdown-toggle data-toggle="dropdown" 
-              img alt="English" src="images/flags/gb.png" title="English" /
-              span en
-              i.fa.fa-angle-down
-            ul.dropdown-menu
-              li
-                a href="en" 
-                  span.text-left English
-                  span.text-right
-                    img alt="English" src="images/flags/gb.png" title="English" /
-              li
-                a href="de" 
-                  span.text-left Deutsch
-                  span.text-right
-                    img alt="Deutsch" src="images/flags/de.png" title="Deutsch" /
-          input name="code" type="hidden" value="" /
-          input name="redirect" type="hidden" value="" /
-      /! /.bt-language
-      .bt-currency
-        form.currency enctype="multipart/form-data" method="post" 
-          .btn-group
-            button.btn.btn-link.dropdown-toggle data-toggle="dropdown" 
-              strong $
-              span USD
-              i.fa.fa-angle-down
-            ul.dropdown-menu
-              li
-                button.currency-select.btn.btn-link name="EUR" type="button" 
-                  span Euro
-                  span €
-              li
-                button.currency-select.btn.btn-link name="GBP" type="button" 
-                  span Pound Sterling
-                  span £
-              li
-                button.currency-select.btn.btn-link name="USD" type="button" 
-                  span US Dollar
-                  span $
-          input name="code" type="hidden" value="" /
-          input name="redirect" type="hidden" value="" /
-      /! /.bt-currency
-      .logged-link
-        a href="login.html" 
-          i.fa.fa-sign-in
-          span Sign In
-        a href="register.html" 
-          i.fa.fa-hand-o-up
-          span Join for Free
+      a href= root_path
+        img.img-responsive alt="Deco27" src="#{ request.base_url }/images/Decotestlogo.png" title= "Deco27"
       .menubar
         .container
           .bt_mainmenu
@@ -207,230 +43,50 @@
                   i.fa.fa-times-circle
                 ul.nav.nav-pills
                   li
-                    a href="index.html" 
+                    a href=root_path
                       span.menu-title Home
+                  li
+                    a href= gallery_path
+                      span.menu-title Gallery
                   li.parent
                     p.plus.visible-xs +
                     a href="#" 
-                      span.menu-title Men's
-                      i.fa.fa-angle-down
-                    .dropdown.drop-grid-6-6
-                      .menu-row.row-col-6
-                        .menu-column.row-grid-2
-                          /! html
-                          .staticblock
-                            a href="index.html" title="Comohos" 
-                              img alt="Comohos" src="images/logo.png" title="Comohos" /
-                            p Metallic round sunglasses powder blue loafer Prada Saffiano button up print. Crop Saint Laurent lilac sports luxe strong eyebrows la marinière razor pleats shoe statement gold collar. Floral bandeau envelope clutch dove grey Jil Sander Vasari dress. Leggings Lanvin Jil Sander Vasari texture collarless grunge leather tote.
-                        .menu-column.row-grid-1
-                          a.parent href="#"  Sweaters
-                          ul.column.category
-                            li.col-grid-1
-                              a href="#"  Hoodies &amp; Jackets
-                            li.col-grid-1
-                              a href="#"  Pants &amp; Shorts
-                            li.col-grid-1
-                              a href="#"  Outerwear
-                            li.col-grid-1
-                              a href="#"  Slips &amp; Shapewear
-                            li.col-grid-1
-                              a href="#"  Sweatshirts
-                        .menu-column.row-grid-1
-                          a.parent href="#"  Shirts
-                          ul.column.category
-                            li.col-grid-1
-                              a href="#"  Sleep &amp; Lounge
-                            li.col-grid-1.sub_category
-                              a href="#" 
-                                | Sweatshirts
-                                i.fa.fa-angle-right
-                              .sub_menu
-                                ul
-                                  li
-                                    a href="#_31"  Underwear &amp; Socks
-                                  li
-                                    a href="#_24"  Underwear
-                            li.col-grid-1
-                              a href="#"  Jeans
-                            li.col-grid-1
-                              a href="#"  Cords
-                            li.col-grid-1
-                              a href="#"  T-Shirts
-                        .menu-column.row-grid-1
-                          /! information
-                          ul.column.information
-                            li.col-grid-1
-                              a href="about.html"  About Us
-                            li.col-grid-1
-                              a href="#"  Privacy Policy
-                            li.col-grid-1
-                              a href="#"  Terms &amp; Conditions
-                        .menu-column.row-grid-1
-                          ul.column.product
-                            /! product
-                            li.col-grid-1
-                              .image
-                                a href="product-detail.html" 
-                                  img alt=("Ribbed boots holographic Céline") src="images/product/p8-170x204.jpg" /
-                                br/
-                              .name
-                                a href="product-detail.html"  Ribbed boots holographic Céline
-                                br/
-                              .price $337.99
-                  li.parent
-                    p.plus.visible-xs +
-                    a href="#" 
-                      span.menu-title Women's
+                      span.menu-title Categories
                       i.fa.fa-angle-down
                     .dropdown.drop-grid-6-3
                       .menu-row.row-col-3
-                        img.row-bg-image.bt-menu-bg alt=("bg image") src="images/bg_menu.jpg" /
                         .menu-column.row-grid-1
-                          a.parent href="#"  Sweaters
                           ul.column.category
                             li.col-grid-1
-                              a href="#"  Hoodies &amp; Jackets
+                              a href="#"  PORCELAINS
                             li.col-grid-1
-                              a href="#"  Pants &amp; Shorts
+                              a href="#"  DOORS
                             li.col-grid-1
-                              a href="#"  Outerwear
+                              a href="#"  WALLS
                             li.col-grid-1
-                              a href="#"  Slips &amp; Shapewear
+                              a href="#"  HARDWOOD FLOORS
                             li.col-grid-1
-                              a href="#"  Sweatshirts
-                        .menu-column.row-grid-1
-                          a.parent href="#"  Sweaters
-                          ul.column.category
-                            li.col-grid-1
-                              a href="#"  Hoodies &amp; Jackets
-                            li.col-grid-1
-                              a href="#"  Pants &amp; Shorts
-                            li.col-grid-1
-                              a href="#"  Outerwear
-                            li.col-grid-1
-                              a href="#"  Slips &amp; Shapewear
-                            li.col-grid-1
-                              a href="#"  Sweatshirts
-                  li.parent
-                    p.plus.visible-xs +
-                    a href="#" 
-                      span.menu-title Bags
-                      i.fa.fa-angle-down
-                    .dropdown.drop-grid-6-1
-                      .menu-row.row-col-1
-                        .menu-column.row-grid-1
-                          a.parent href="#"  Shirts
-                          ul.column.category
-                            li.col-grid-1
-                              a href="#"  Sleep &amp; Lounge
-                            li.col-grid-1.sub_category
-                              a href="#" 
-                                | Sweatshirts
-                                i.fa.fa-angle-right
-                              .sub_menu
-                                ul
-                                  li
-                                    a href="#_31"  Underwear &amp; Socks
-                                  li
-                                    a href="#_24"  Underwear
-                            li.col-grid-1
-                              a href="#"  Jeans
-                            li.col-grid-1
-                              a href="#"  Cords
-                            li.col-grid-1
-                              a href="#"  T-Shirts
-                  li.parent
-                    p.plus.visible-xs +
-                    a href="#" 
-                      span.menu-title Shoes
-                      i.fa.fa-angle-down
-                    .dropdown.drop-grid-6-6
-                      .menu-row.row-col-6
-                        .menu-column.row-grid-2
-                          /! html
-                          .staticblock
-                            a href="index.html" title="Comohos" 
-                              img alt="Comohos" src="images/logo.png" title="Comohos" /
-                            p Metallic round sunglasses powder blue loafer Prada Saffiano button up print. Crop Saint Laurent lilac sports luxe strong eyebrows la marinière razor pleats shoe statement gold collar. Floral bandeau envelope clutch dove grey Jil Sander Vasari dress. Leggings Lanvin Jil Sander Vasari texture collarless grunge leather tote.
-                        .menu-column.row-grid-1
-                          a.parent href="#"  Shirts
-                          ul.column.category
-                            li.col-grid-1
-                              a href="#"  Sleep &amp; Lounge
-                            li.col-grid-1.sub_category
-                              a href="#" 
-                                | Sweatshirts
-                                i.fa.fa-angle-right
-                              .sub_menu
-                                ul
-                                  li
-                                    a href="#_31"  Underwear &amp; Socks
-                                  li
-                                    a href="#_24"  Underwear
-                            li.col-grid-1
-                              a href="#"  Jeans
-                            li.col-grid-1
-                              a href="#"  Cords
-                            li.col-grid-1
-                              a href="#"  T-Shirts
-                        .menu-column.row-grid-1
-                          a.parent href="#"  Sweaters
-                          ul.column.category
-                            li.col-grid-1
-                              a href="#"  Hoodies &amp; Jackets
-                            li.col-grid-1
-                              a href="#"  Pants &amp; Shorts
-                            li.col-grid-1
-                              a href="#"  Outerwear
-                            li.col-grid-1
-                              a href="#"  Slips &amp; Shapewear
-                            li.col-grid-1
-                              a href="#"  Sweatshirts
-                        .menu-column.row-grid-2
-                          /! html
-                          .staticblock
-                            iframe height="360" src="http://player.vimeo.com/video/32448092" width="640" 
-                  li.parent
-                    p.plus.visible-xs +
-                    a href="#" 
-                      span.menu-title Boys
-                      i.fa.fa-angle-down
-                    .dropdown.drop-grid-6-1
-                      .menu-row.row-col-1
-                        .menu-column.row-grid-1
-                          /! information
-                          ul.column.information
-                            li.col-grid-1
-                              a href="about.html"  About Us
-                            li.col-grid-1
-                              a href="#"  Delivery Information
-                            li.col-grid-1
-                              a href="#"  Privacy Policy
-                            li.col-grid-1
-                              a href="#"  Terms &amp; Conditions
+                              a href="#"  STAIRS
                   li
-                    a href="blog.html" 
-                      span.menu-title Blog
-      /! /.menubar
-  /! /.bt-mobile
+                    a href= contact_path
+                      span.menu-title Contact Us
   header
     .container
       .row
         .col-sm-3
           #logo
-            a href="#{request.base_url}" 
-              img.img-responsive alt=("Deco27") src="#{ request.base_url }/images/Decotestlogo.png" title=("Comohos Store") /
-        #bt-search.input-group
-          a.icon_search href="" 
-            i.fa.fa-search
-          .search-form
-            #search.input-group
-              input.form-control.input-lg name="search" placeholder="Search" type="text" value="" /
-              span.input-group-btn
-                button.btn.btn-default.btn-lg type="button" 
-                  i.fa.fa-search
-        /! /#bt-search
-        /! Load menu
+            a href= root_path
+              img.img-responsive alt="Deco27" src="#{ request.base_url }/images/Decotestlogo.png" title= "Deco27"
+        / temporary disable searching
+        / #bt-search.input-group
+        /   a.icon_search href="" 
+        /     i.fa.fa-search
+        /   .search-form
+        /     #search.input-group
+        /       input.form-control.input-lg name="search" placeholder="Search" type="text" value="" /
+        /       span.input-group-btn
+        /         button.btn.btn-default.btn-lg type="button" 
+        /           i.fa.fa-search
         .menubar
           .container
             .bt_mainmenu
@@ -445,208 +101,33 @@
                     i.fa.fa-times-circle
                   ul.nav.nav-pills
                     li
-                      a href="index.html" 
+                      a href= root_path 
                         span.menu-title Home
-                    li.parent
-                      p.plus.visible-xs +
-                      a href="#" 
-                        span.menu-title Men's
-                        i.fa.fa-angle-down
-                      .dropdown.drop-grid-6-6
-                        .menu-row.row-col-6
-                          .menu-column.row-grid-2
-                            /! html
-                            .staticblock
-                              a href="index.html" title="Comohos" 
-                                img alt="Comohos" src="images/logo.png" title="Comohos" /
-                              p Metallic round sunglasses powder blue loafer Prada Saffiano button up print. Crop Saint Laurent lilac sports luxe strong eyebrows la marinière razor pleats shoe statement gold collar. Floral bandeau envelope clutch dove grey Jil Sander Vasari dress. Leggings Lanvin Jil Sander Vasari texture collarless grunge leather tote.
-                          .menu-column.row-grid-1
-                            a.parent href="#"  Sweaters
-                            ul.column.category
-                              li.col-grid-1
-                                a href="#"  Hoodies &amp; Jackets
-                              li.col-grid-1
-                                a href="#"  Pants &amp; Shorts
-                              li.col-grid-1
-                                a href="#"  Outerwear
-                              li.col-grid-1
-                                a href="#"  Slips &amp; Shapewear
-                              li.col-grid-1
-                                a href="#"  Sweatshirts
-                          .menu-column.row-grid-1
-                            a.parent href="#"  Shirts
-                            ul.column.category
-                              li.col-grid-1
-                                a href="#"  Sleep &amp; Lounge
-                              li.col-grid-1.sub_category
-                                a href="#" 
-                                  | Sweatshirts
-                                  i.fa.fa-angle-right
-                                .sub_menu
-                                  ul
-                                    li
-                                      a href="#_31"  Underwear &amp; Socks
-                                    li
-                                      a href="#_24"  Underwear
-                              li.col-grid-1
-                                a href="#"  Jeans
-                              li.col-grid-1
-                                a href="#"  Cords
-                              li.col-grid-1
-                                a href="#"  T-Shirts
-                          .menu-column.row-grid-1
-                            /! information
-                            ul.column.information
-                              li.col-grid-1
-                                a href="about.html"  About Us
-                              li.col-grid-1
-                                a href="#"  Privacy Policy
-                              li.col-grid-1
-                                a href="#"  Terms &amp; Conditions
-                          .menu-column.row-grid-1
-                            ul.column.product
-                              /! product
-                              li.col-grid-1
-                                .image
-                                  a href="product-detail.html" 
-                                    img alt=("Ribbed boots holographic Céline") src="images/product/p8-170x204.jpg" /
-                                  br/
-                                .name
-                                  a href="product-detail.html"  Ribbed boots holographic Céline
-                                  br/
-                                .price $337.99
-                    li.parent
-                      p.plus.visible-xs +
-                      a href="#" 
-                        span.menu-title Women's
-                        i.fa.fa-angle-down
-                      .dropdown.drop-grid-6-3
-                        .menu-row.row-col-3
-                          img.row-bg-image.bt-menu-bg alt=("bg image") src="images/bg_menu.jpg" /
-                          .menu-column.row-grid-1
-                            a.parent href="#"  Sweaters
-                            ul.column.category
-                              li.col-grid-1
-                                a href="#"  Hoodies &amp; Jackets
-                              li.col-grid-1
-                                a href="#"  Pants &amp; Shorts
-                              li.col-grid-1
-                                a href="#"  Outerwear
-                              li.col-grid-1
-                                a href="#"  Slips &amp; Shapewear
-                              li.col-grid-1
-                                a href="#"  Sweatshirts
-                          .menu-column.row-grid-1
-                            a.parent href="#"  Sweaters
-                            ul.column.category
-                              li.col-grid-1
-                                a href="#"  Hoodies &amp; Jackets
-                              li.col-grid-1
-                                a href="#"  Pants &amp; Shorts
-                              li.col-grid-1
-                                a href="#"  Outerwear
-                              li.col-grid-1
-                                a href="#"  Slips &amp; Shapewear
-                              li.col-grid-1
-                                a href="#"  Sweatshirts
-                    li.parent
-                      p.plus.visible-xs +
-                      a href="#" 
-                        span.menu-title Bags
-                        i.fa.fa-angle-down
-                      .dropdown.drop-grid-6-1
-                        .menu-row.row-col-1
-                          .menu-column.row-grid-1
-                            a.parent href="#"  Shirts
-                            ul.column.category
-                              li.col-grid-1
-                                a href="#"  Sleep &amp; Lounge
-                              li.col-grid-1.sub_category
-                                a href="#" 
-                                  | Sweatshirts
-                                  i.fa.fa-angle-right
-                                .sub_menu
-                                  ul
-                                    li
-                                      a href="#_31"  Underwear &amp; Socks
-                                    li
-                                      a href="#_24"  Underwear
-                              li.col-grid-1
-                                a href="#"  Jeans
-                              li.col-grid-1
-                                a href="#"  Cords
-                              li.col-grid-1
-                                a href="#"  T-Shirts
-                    li.parent
-                      p.plus.visible-xs +
-                      a href="#" 
-                        span.menu-title Shoes
-                        i.fa.fa-angle-down
-                      .dropdown.drop-grid-6-6
-                        .menu-row.row-col-6
-                          .menu-column.row-grid-2
-                            /! html
-                            .staticblock
-                              a href="index.html" title="Comohos" 
-                                img alt="Comohos" src="images/logo.png" title="Comohos" /
-                              p Metallic round sunglasses powder blue loafer Prada Saffiano button up print. Crop Saint Laurent lilac sports luxe strong eyebrows la marinière razor pleats shoe statement gold collar. Floral bandeau envelope clutch dove grey Jil Sander Vasari dress. Leggings Lanvin Jil Sander Vasari texture collarless grunge leather tote.
-                          .menu-column.row-grid-1
-                            a.parent href="#"  Shirts
-                            ul.column.category
-                              li.col-grid-1
-                                a href="#"  Sleep &amp; Lounge
-                              li.col-grid-1.sub_category
-                                a href="#" 
-                                  | Sweatshirts
-                                  i.fa.fa-angle-right
-                                .sub_menu
-                                  ul
-                                    li
-                                      a href="#_31"  Underwear &amp; Socks
-                                    li
-                                      a href="#_24"  Underwear
-                              li.col-grid-1
-                                a href="#"  Jeans
-                              li.col-grid-1
-                                a href="#"  Cords
-                              li.col-grid-1
-                                a href="#"  T-Shirts
-                          .menu-column.row-grid-1
-                            a.parent href="#"  Sweaters
-                            ul.column.category
-                              li.col-grid-1
-                                a href="#"  Hoodies &amp; Jackets
-                              li.col-grid-1
-                                a href="#"  Pants &amp; Shorts
-                              li.col-grid-1
-                                a href="#"  Outerwear
-                              li.col-grid-1
-                                a href="#"  Slips &amp; Shapewear
-                              li.col-grid-1
-                                a href="#"  Sweatshirts
-                          .menu-column.row-grid-2
-                            /! html
-                            .staticblock
-                              iframe height="360" src="http://player.vimeo.com/video/32448092" width="640" 
-                    li.parent
-                      p.plus.visible-xs +
-                      a href="#" 
-                        span.menu-title Boys
-                        i.fa.fa-angle-down
-                      .dropdown.drop-grid-6-1
-                        .menu-row.row-col-1
-                          .menu-column.row-grid-1
-                            /! information
-                            ul.column.information
-                              li.col-grid-1
-                                a href="about.html"  About Us
-                              li.col-grid-1
-                                a href="#"  Delivery Information
-                              li.col-grid-1
-                                a href="#"  Privacy Policy
-                              li.col-grid-1
-                                a href="#"  Terms &amp; Conditions
                     li
-                      a href="blog.html" 
-                        span.menu-title Blog
+                      a href= gallery_path 
+                        span.menu-title Gallery
+                    li.parent
+                      p.plus.visible-xs +
+                      a href="#" 
+                        span.menu-title Categories
+                        i.fa.fa-angle-down
+                      .dropdown.drop-grid-6-1
+                        .menu-row.row-col-1
+                          .menu-column.row-grid-1
+                            ul.column.category
+                              li.col-grid-1
+                                a href="#" PORCELAINS
+                              li.col-grid-1
+                                a href="#"  DOORS
+                              li.col-grid-1
+                                a href="#"  WALLS
+                              li.col-grid-1
+                                a href="#"  T-Shirts
+                              li.col-grid-1
+	                              a href="#"  HARDWOOD FLOORS
+                              li.col-grid-1
+                                a href="#"  STAIRS
+                    li
+                      a href= contact_path
+                        span.menu-title Contact Us
 

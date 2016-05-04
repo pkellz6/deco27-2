@@ -35,6 +35,9 @@ gem 'aws-sdk', '~> 1.5.7'
 #Bootstrap framwork for front end
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'font-awesome-rails'
+gem 'slim'
+gem 'simple_form'
+gem 'kaminari'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

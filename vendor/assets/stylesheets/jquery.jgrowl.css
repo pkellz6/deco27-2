@@ -49,7 +49,7 @@ div.center div.jGrowl-notification, div.center div.jGrowl-closer {
 div.jGrowl div.jGrowl-notification, div.jGrowl div.jGrowl-closer {
 	zoom: 					1;
 	width: 					280px;
-
+	
 	margin-top: 			5px;
 	margin-bottom: 			5px;
 	font-size: 				1em;
@@ -57,7 +57,7 @@ div.jGrowl div.jGrowl-notification, div.jGrowl div.jGrowl-closer {
 	display: 				none;
 	border: 			1px solid #eaeaea;
     overflow: 				hidden;
-
+   
 	background:				#fff;
 	box-shadow:0 3px 13px -10px #505050;
 	position:relative;
@@ -91,9 +91,9 @@ div.jGrowl div.jGrowl-closer {
 }
 
 div.jGrowl div.jGrowl-notification div.jGrowl-header {
-
-
-	font-size:				14px;
+	
+	
+	font-size:				14px;	
 	font-weight:			400;
 	color:#7db998;
 	padding-bottom:8px;
@@ -101,7 +101,7 @@ div.jGrowl div.jGrowl-notification div.jGrowl-header {
 	padding-left:15px;
 	border-bottom:1px solid #e5e5e5;
 	text-transform:uppercase;
-
+	
 }
 div.jGrowl div.jGrowl-notification div.jGrowl-message{
 	padding:15px;
@@ -109,24 +109,24 @@ div.jGrowl div.jGrowl-notification div.jGrowl-message{
 }
 
 div.jGrowl div.jGrowl-notification div.jGrowl-header span{
-	background:url(/assets/check.png) no-repeat left 3px;
+	background:url(../images/check.png) no-repeat left 3px;
 	padding-left:22px;
-
+	
 }
-div.jGrowl div.jGrowl-notification div.jGrowl-message img {
-	float:					left;
+div.jGrowl div.jGrowl-notification div.jGrowl-message img { 
+	float:					left; 
 	margin-right:			15px;
 	border:1px solid #eaeaea;
 }
 div.jGrowl div.jGrowl-notification div.jGrowl-message h3 {
-
+	
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
 	text-transform:none;
     color:#646464;
 	margin:0;
-
+	
 }
 div.jGrowl div.jGrowl-notification div.jGrowl-message h3 a{font-weight:400;text-decoration:none;color:#7db998}
 div.jGrowl div.jGrowl-notification div.jGrowl-message h3 a:hover{text-decoration:underline}
@@ -143,7 +143,7 @@ div.jGrowl div.jGrowl-notification div.jGrowl-close {
 	position:absolute;
 	right:0;
 	top:7px;
-	background:url(/assets/remove.png) no-repeat;
+	background:url(../images/remove.png) no-repeat;
 	color:#fff;
 }
 .right-to-left div.jGrowl div.jGrowl-notification div.jGrowl-close{

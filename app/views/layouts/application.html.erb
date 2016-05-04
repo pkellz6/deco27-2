@@ -29,8 +29,20 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet" type="text/css" />
 
+  <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/bootstrap.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/stylesheet.css" />
   <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/boss_megamenu.css" />
+  <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/jquery.jgrowl.css" />
+  <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/boss_alphabet.css" />
+  <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/responsive.css" />
+  <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/boss_facecomments.css" />
+  <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/loading.css" />
+  <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/cs.animate.css" />
+  <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/video.css" />
+  <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/isotope.css" />
+  <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/bossblog.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<%= request.base_url %>/stylesheets/revolutionslider_settings.css" media="screen" />
 
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -40,7 +52,7 @@
 <div id="bt_container" class="bt-wide">
 
 
-<%= render 'partials/nav' %>
+<%= render 'shares/header' %>
 
 <%= yield %>
 

@@ -2,6 +2,7 @@ class Category < ActiveRecord::Base
 	extend FriendlyId
   has_many :products, dependent: :destroy
   friendly_id :name, use: :slugged
+  validates_presence_of :name
 
   DEFAULT_URL = '/images/missing.png'
   VALIDATE_SIZE = { :in => 0..5.megabytes, :message => 'Photo size too large. Please limit to 5 mb.' }
@@ -11,4 +12,8 @@ class Category < ActiveRecord::Base
   validates_attachment  :picture,
                         :content_type => { :content_type => /\Aimage\/.*\Z/},
                         :size => VALIDATE_SIZE
+
+	def should_generate_new_friendly_id?
+    slug.blank?
+  end
 end

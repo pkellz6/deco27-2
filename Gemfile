@@ -38,6 +38,7 @@ gem 'font-awesome-rails'
 gem 'slim'
 gem 'simple_form'
 gem 'kaminari'
+gem 'friendly_id', '~> 5.1.0'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

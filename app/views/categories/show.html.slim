@@ -1,31 +1,40 @@
-<p id="notice"><%= notice %></p>
+.container.main-content
+  .row
+    column#column-left.col-sm-3.hidden-xs
+    #content.col-sm-12
+      .bt-block-category.fadeInDown.animated data-animate="fadeInDown" data-delay="200"
+        a href="#" 
+          img alt="banner" src= @category.picture.url(:large)
+        .block-title
+          h1 = @category.name
+          h4 glamour with an edge
+          a href="#"  Shop Now
 
-<div class="text-center">
-  <h2><%= @category.name %></h2>
-  <%= image_tag(@category.picture, class: "img-responsive img-margin") %>
+      .product-filter
+        .display.hidden-xs
+          button#list-view.btn-list data-toggle="tooltip" title="List" type="button" 
+            i.fa.fa-th-list
+          button#grid-view.btn-grid data-toggle="tooltip" title="Grid" type="button" 
+            i.fa.fa-th-large
+      .row
+        = render partial: 'products/product_card', :collection => @category.products, :as => :product
 
-  <%= link_to 'Products', category_products_path(@category), class: "btn btn-primary" %> |
-  <%= link_to 'Back', categories_path, class: "btn btn-basecamp" %>
-</div>
-
-<script src="<%= request.base_url %>/javascripts/jquery-2.1.1.min.js"></script>
-<script src="<%= request.base_url %>/javascripts/bootstrap.min.js"></script>
-<script src="<%= request.base_url %>/javascripts/getwidthbrowser.js"></script>
-<script src="<%= request.base_url %>/javascripts/cs.bossthemes.js"></script>
-<script src="<%= request.base_url %>/javascripts/jquery.jgrowl.js"></script>
-<script src="<%= request.base_url %>/javascripts/jquery.appear.js"></script>
-<script src="<%= request.base_url %>/javascripts/video.js"></script>
-<script src="<%= request.base_url %>/javascripts/jquery.smoothscroll.js"></script>
-<script src="<%= request.base_url %>/javascripts/carouFredSel-6.2.1.js"></script>
-<script src="<%= request.base_url %>/javascripts/plugins.js"></script>
-<script src="<%= request.base_url %>/javascripts/jquery.tools.min.js"></script>
-<script src="<%= request.base_url %>/javascripts/jquery.revolution.min.js"></script>
-<script src="<%= request.base_url %>/javascripts/cloud-zoom.1.0.3.js"></script>
-<script src="<%= request.base_url %>/javascripts/custom.js"></script>
-<script>
+script src="#{ request.base_url }/javascripts/jquery-2.1.1.min.js"
+script src="#{ request.base_url }/javascripts/bootstrap.min.js"
+script src="#{ request.base_url }/javascripts/getwidthbrowser.js"
+script src="#{ request.base_url }/javascripts/cs.bossthemes.js"
+script src="#{ request.base_url }/javascripts/jquery.jgrowl.js"
+script src="#{ request.base_url }/javascripts/jquery.appear.js"
+script src="#{ request.base_url }/javascripts/video.js"
+script src="#{ request.base_url }/javascripts/jquery.smoothscroll.js"
+script src="#{ request.base_url }/javascripts/carouFredSel-6.2.1.js"
+script src="#{ request.base_url }/javascripts/plugins.js"
+script src="#{ request.base_url }/javascripts/jquery.tools.min.js"
+script src="#{ request.base_url }/javascripts/jquery.revolution.min.js"
+script src="#{ request.base_url }/javascripts/cloud-zoom.1.0.3.js"
+script src="#{ request.base_url }/javascripts/custom.js"
+javascript:
     jQuery(document).ready(function() {
-
-        boss_quick_shop();
         dataAnimate();
 
         /* View Mode */
@@ -78,4 +87,3 @@
             $('.button-group', this).append(_qsHref);
         });
     }
-</script>

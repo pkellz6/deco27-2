@@ -59,3 +59,29 @@ $dropdown-border: #8E4346;
 .mega-menu > ul.nav > li .dropdown {
 	border-bottom: 3px solid $dropdown-border;
 }
+
+.product-grid{ 
+	margin-right: 0;
+}
+
+.main-content {
+	margin-top: 30px;
+}
+
+.bt-block-category img {
+	width: 100%;
+}
+
+.product-grid .product-thumb:hover .button-group .btn-cart, 
+.product-layout.element-4 .product-thumb:hover .button-group .btn-cart, 
+.product-related .relt_product:hover .button-group .btn-cart {
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+
+
+
+
+
+

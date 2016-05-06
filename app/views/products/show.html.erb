@@ -1,3 +1,145 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+    <div class="row">
+        <div id="content" class="col-sm-12">
+            <div class="product-info">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="bt-product-zoom">
+                            <div class="bosszoomtoolbox boss-additional">
+                                <div itemprop="image" class="image">
+                                    <a href=" <%= @product.product_images.first.image.url(:large) %>" title="Cashmere cuff vintage Levi maxi" class="cloud-zoom" id='zoom1' rel=""><img src="<%= @product.product_images.first.image.url(:medium) %>" title="Cashmere cuff vintage Levi maxi" alt="Cashmere cuff vintage Levi maxi" id="image" />
+                                    </a>
+                                </div>
+                                <div class="image-additional">
+                                    <ul class="thumbnails" id="boss-image-additional">
+                                    		<% @product.product_images.each do |photo| %>
+                                    			<li class="image-additional">
+                                            <a href="<%= photo.image.url(:large) %>" title="Cashmere cuff vintage Levi maxi" class="cloud-zoom-gallery" rel="useZoom: 'zoom1', smallImage: '<%= photo.image.url(:medium) %>' ">
+                                            	<img src=<%= photo.image.url(:thumb) %> title="Cashmere cuff vintage Levi maxi" alt="Cashmere cuff vintage Levi maxi" />
+                                            </a>
+                                        	</li>
+                                    		<% end %>
+                                    </ul> <a id="prev_image_additional" class="prev nav_thumb" href="javascript:void(0)" style="display:block;" title="prev"><i data-original-title="Previous" class="fa fa-angle-left btooltip">&nbsp;</i></a> <a id="next_image_additional" class="next nav_thumb" href="javascript:void(0)" style="display:block;" title="next"><i data-original-title="Next" class="fa fa-angle-right btooltip">&nbsp;</i></a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-sm-offset-1">
+                        <h2><%= @product.name %></h2>
+                        
+                        <div class="description">
+                            <h3>INFO</h3>
+                            <ul class="list-unstyled">
+                            		<% if @product.id.present? %>
+                                	<li>- Brand: <a href="#">Apple</a>
+                                <% end %>
+                                </li>
+                                <li>- Description:<%= @product.description %></b>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.product-info -->
+        </div><!-- /#content -->
+    </div><!-- /.row -->
+</div>
+<script src="<%= request.base_url %>/javascripts/jquery-2.1.1.min.js"></script>
+<script src="<%= request.base_url %>/javascripts/bootstrap.min.js"></script>
+<script src="<%= request.base_url %>/javascripts/getwidthbrowser.js"></script>
+<script src="<%= request.base_url %>/javascripts/cs.bossthemes.js"></script>
+<script src="<%= request.base_url %>/javascripts/jquery.jgrowl.js"></script>
+<script src="<%= request.base_url %>/javascripts/jquery.appear.js"></script>
+<script src="<%= request.base_url %>/javascripts/video.js"></script>
+<script src="<%= request.base_url %>/javascripts/jquery.smoothscroll.js"></script>
+<script src="<%= request.base_url %>/javascripts/carouFredSel-6.2.1.js"></script>
+<script src="<%= request.base_url %>/javascripts/plugins.js"></script>
+<script src="<%= request.base_url %>/javascripts/jquery.tools.min.js"></script>
+<script src="<%= request.base_url %>/javascripts/jquery.revolution.min.js"></script>
+<script src="<%= request.base_url %>/javascripts/cloud-zoom.1.0.3.js"></script>
+<script src="<%= request.base_url %>/javascripts/custom.js"></script>
+<script src="<%= request.base_url %>/javascripts/jquery.fancybox.js"></script>
+<script>
+    jQuery(document).ready(function() {
+        /* bosszoomtoolbox */
+        $.fn.CloudZoom.defaults = {
+            adjustX: 0,
+            adjustY: 0,
+            tint: '#FFF',
+            tintOpacity: 0.5,
+            softFocus: 0,
+            lensOpacity: 0.7,
+            zoomWidth: '450',
+            zoomHeight: '512',
+            position: 'inside',
+            showTitle: 0,
+            titleOpacity: 0.5,
+            smoothMove: '3'
+        };
+        $('.cloud-zoom, .cloud-zoom-gallery').CloudZoom();
 
-<%= render partial: "product", locals: {product: @product} %>
+        //pass the images to Fancybox           
+        var gallerylist = [];
+
+        <% @product.product_images.each do |photo| %>
+        	gallerylist.push({
+            href: "<%= photo.image.url(:original) %>",
+            title: "Cashmere cuff vintage Levi maxi"
+        	});
+    		<% end %>
+        $("#wrap").bind('click', function() {
+            $.fancybox.open(gallerylist);
+            return false;
+        });
+        
+        $("#boss-image-additional li a").on('click',function() {
+            $("#boss_large").attr("href", this)
+        });
+
+        /* Color Option */
+        $('.bt-image-option').on('click',function() {
+            $('.bt-image-option').each(function() {
+                $(this).removeClass('active');
+            });
+            $(this).addClass('active');
+        });
+
+        /* boss-image-additional slider */
+        $('#boss-image-additional').carouFredSel({
+            auto: false,
+            responsive: true,
+            width: '100%',
+            prev: '#prev_image_additional',
+            next: '#next_image_additional',
+            swipe: {
+                onTouch: true
+            },
+            items: {
+                width: 120,
+                height: 'auto',
+                visible: {
+                    min: 1,
+                    max: 3
+                }
+            },
+            scroll: {
+                direction: 'left', //  The direction of the transition.
+                duration: 500, //  The duration of the transition.
+            }
+        });
+
+    });
+
+    function changeQty(increase) {
+      var qty = parseInt($('.select_number').find("input").val());
+      if (!isNaN(qty)) {
+          qty = increase ? qty + 1 : (qty > 1 ? qty - 1 : 1);
+          $('.select_number').find("input").val(qty);
+      } else {
+          $('.select_number').find("input").val(1);
+      }
+    }
+    function goToByScroll(id){
+      $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');   
+    }
+</script>

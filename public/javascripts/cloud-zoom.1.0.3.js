@@ -272,7 +272,6 @@
                         }
                 }
                 zoomDiv = appendTo.append(format('<div id="cloud-zoom-big" class="cloud-zoom-big" style="display:none;position:absolute;left:0;top:%1px;width:%2px;height:%3px;background-image:url(\'%4\');z-index:99;"></div>', xPos, yPos, w, h, zoomImage.src)).find(':last');
-                console.log(zoomDiv);
                 zoomDiv = $('.cloud-zoom-big',appendTo);
                 // Add the title from title tag.
                 if (sImg.attr('title') && opts.showTitle) {

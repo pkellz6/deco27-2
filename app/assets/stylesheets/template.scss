@@ -82,9 +82,28 @@ $dropdown-border: #8E4346;
 
 .product-info {
 	margin-top: 30px;
+} 
+
+.bt-product-zoom .image img{
+	margin: auto;
 }
 
+// .product-image-thumb {
+// 	height: 17px;
+// }
 
+@media (min-width: 1200px) { 
+	.product-image-thumb {
+		height: 97px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.product-image-thumb {
+		height: 78px;
+	}
+}
 
 
 

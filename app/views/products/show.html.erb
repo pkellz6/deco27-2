@@ -7,15 +7,16 @@
                         <div class="bt-product-zoom">
                             <div class="bosszoomtoolbox boss-additional">
                                 <div itemprop="image" class="image">
-                                    <a href=" <%= @product.product_images.first.image.url(:large) %>" title="Cashmere cuff vintage Levi maxi" class="cloud-zoom" id='zoom1' rel=""><img src="<%= @product.product_images.first.image.url(:medium) %>" title="Cashmere cuff vintage Levi maxi" alt="Cashmere cuff vintage Levi maxi" id="image" />
+                                		<% first_photo = @product.product_images.first %>
+                                    <a href=" <%= first_photo.image.url(:large) %>" title="<%= first_photo.name.present? ? first_photo.name : '' %>" class="cloud-zoom" id='zoom1' rel=""><img src="<%= first_photo.image.url(:medium) %>" title="<%= first_photo.name.present? ? first_photo.name : '' %>" alt="<%= first_photo.name.present? ? first_photo.name : '' %>" id="image" />
                                     </a>
                                 </div>
                                 <div class="image-additional">
                                     <ul class="thumbnails" id="boss-image-additional">
                                     		<% @product.product_images.each do |photo| %>
                                     			<li class="image-additional">
-                                            <a href="<%= photo.image.url(:large) %>" title="Cashmere cuff vintage Levi maxi" class="cloud-zoom-gallery" rel="useZoom: 'zoom1', smallImage: '<%= photo.image.url(:medium) %>' ">
-                                            	<img src=<%= photo.image.url(:thumb) %> title="Cashmere cuff vintage Levi maxi" alt="Cashmere cuff vintage Levi maxi" />
+                                            <a href="<%= photo.image.url(:large) %>" title="<%= photo.name.present? ? photo.name : '' %>" class="cloud-zoom-gallery" rel="useZoom: 'zoom1', smallImage: '<%= photo.image.url(:medium) %>' ">
+                                            	<img class='product-image-thumb' src=<%= photo.image.url(:thumb) %> title="<%= photo.name.present? ? photo.name : '' %>" alt="<%= photo.name.present? ? photo.name : '' %>" />
                                             </a>
                                         	</li>
                                     		<% end %>
@@ -30,7 +31,7 @@
                         <div class="description">
                             <h3>INFO</h3>
                             <ul class="list-unstyled">
-                            		<% if @product.id.present? %>
+                            		<% if @product.brand.present? %>
                                 	<li>- Brand: <a href="#">Apple</a>
                                 <% end %>
                                 </li>
@@ -84,7 +85,7 @@
         <% @product.product_images.each do |photo| %>
         	gallerylist.push({
             href: "<%= photo.image.url(:original) %>",
-            title: "Cashmere cuff vintage Levi maxi"
+            title: "<%= photo.name.present? ? photo.name : '' %>"
         	});
     		<% end %>
         $("#wrap").bind('click', function() {

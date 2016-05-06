@@ -23,7 +23,7 @@ document.createElement('track');
  * @return {vjs.Player}             A player instance
  * @namespace
  */
-
+ 
 var vjs = function(id, options, ready){
   var tag; // Element of ID
 
@@ -4052,7 +4052,7 @@ vjs.Player.prototype.onPlay = function(){
   $('.bt_video_banner').removeClass('bt-show');
   $('.bt_video_banner').addClass('bt-hide');
   //$('.vjs-poster').css('background-image','');
-
+  
   //$('.vjs-poster').css('background-image','http://192.168.1.31/58_Q_Claudine/trunk/site/image/catalog/bt_claudine/video_play_backg.jpg');
 };
 

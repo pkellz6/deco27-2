@@ -1,0 +1,192 @@
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+.home_filter_content .box-content>.filter_item {
+ 
+	display:inline-block;
+	z-index:99999;
+	vertical-align:top;
+	min-height:330px;
+	padding:0
+  
+}
+.home_filter_content .box-content>.filter_item .image img{
+	width:100%;
+}
+.filtercontainer{
+	
+	
+	position:relative;
+	
+	
+}
+@media (max-width: 1199px){
+.home_filter_content .box-content>.filter_item{
+	width:156px;
+	min-height:331px;
+}
+}
+@media (max-width: 991px){
+.home_filter_content .box-content> .filter_item{
+	width:210px;
+	min-height:407px;
+}
+
+
+}
+@media (max-width: 767px){
+.home_filter_content .box-content>.filter_item {margin: 0 30px 20px;  width: 240px;}
+
+
+}
+@media (max-width: 737px){
+}
+@media (max-width: 500px){
+
+}
+
+
+
+
+
+
+/**** Example taboptions ****/
+
+#taboptions {
+  
+}
+
+#taboptions h3 {
+  
+  font-size: 15px;
+}
+
+#taboptions h4 { 
+  font-weight: bold;
+}
+
+#taboptions ul {
+  margin: 0;
+  list-style: none;
+}
+
+#taboptions ul ul {
+ 
+}
+
+#taboptions li {
+  display:inline-block;
+  margin-bottom: 0;
+  margin-right:-4px;
+}
+
+
+
+#taboptions li a {
+	font-size:12px;
+	color:#ffffff;
+	font-weight:700;
+	 margin-right:5px;
+  padding:13px 20px;
+}
+#taboptions li a:hover{
+	color:#47cbde;
+}
+
+
+#taboptions li a.selected {
+  
+  
+    border-radius: 5px 5px 0 0;
+    position: relative;
+	color:#202020;
+	background: #e6e6e6; /* Old browsers */
+background: -moz-linear-gradient(top,  #e6e6e6 0%, #ffffff 50%, #f0f0f0 51%, #f4f4f4 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e6e6e6), color-stop(50%,#ffffff), color-stop(51%,#f0f0f0), color-stop(100%,#f4f4f4)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #e6e6e6 0%,#ffffff 50%,#f0f0f0 51%,#f4f4f4 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #e6e6e6 0%,#ffffff 50%,#f0f0f0 51%,#f4f4f4 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #e6e6e6 0%,#ffffff 50%,#f0f0f0 51%,#f4f4f4 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #e6e6e6 0%,#ffffff 50%,#f0f0f0 51%,#f4f4f4 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-9 */
+cursor:default;
+	
+  
+}
+
+/* Combination filter taboptions*/
+
+#taboptions .option-combo {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+
+#taboptions .option-combo ul {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+#taboptions .option-combo h2,
+#taboptions .option-combo h4 {
+  line-height: 34px;
+  margin-bottom: 0;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;

@@ -7,7 +7,7 @@
 	    });
 	};
 
-
+    
 
     /* Scroll Top */
     jQuery(window).scroll(function() {

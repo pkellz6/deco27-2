@@ -25,39 +25,39 @@ jQuery(document).ready(function($) {
 // handles Animate
 function dataAnimate(){
   $('[data-animate]').each(function(){
-
+    
     var $toAnimateElement = $(this);
-
+    
     var toAnimateDelay = $(this).attr('data-delay');
-
+    
     var toAnimateDelayTime = 0;
-
+    
     if( toAnimateDelay ) { toAnimateDelayTime = Number( toAnimateDelay ); } else { toAnimateDelayTime = 200; }
-
+    
     if( !$toAnimateElement.hasClass('animated') ) {
-
+      
       $toAnimateElement.addClass('not-animated');
-
+      
       var elementAnimation = $toAnimateElement.attr('data-animate');
-
+      
       $toAnimateElement.appear(function () {
-
+        
         setTimeout(function() {
           $toAnimateElement.removeClass('not-animated').addClass( elementAnimation + ' animated');
         }, toAnimateDelayTime);
-
+        
       },{accX: 0, accY: -80},'easeInCubic');
-
+      
     }
-
+    
   });
 }
-
+   
 jQuery(document).ready(function($) {
-
+  
   /* DETECT PLATFORM */
   $.support.touch = 'ontouchend' in document;
-
+  
   if ($.support.touch) {
     touch = true;
     $('body').addClass('touch');
@@ -65,30 +65,30 @@ jQuery(document).ready(function($) {
   else{
 	$('body').addClass('notouch');
   }
-
+  
     // Product List
 	$('#list-view').click(function() {
 		$('#list-view').addClass('active');
 		$('#grid-view').removeClass('active');
 	});
-
+	
 	// Product Grid
 	$('#grid-view').click(function() {
 		$('#grid-view').addClass('active');
 		$('#list-view').removeClass('active');
 	});
-
+  
 	if (localStorage.getItem('display') == 'list') {
 		$('#list-view').trigger('click');
 	} else {
 		$('#grid-view').trigger('click');
 	}
-
+  
   /* Handle Animate */
   if(touch == false){
     dataAnimate();
   }
-
+  
 	$(".open-bt-mobile,.close-panel").click(function(){
 		$('body').toggleClass('openNav');
 	});
@@ -102,10 +102,10 @@ jQuery(document).ready(function($) {
 			$(this).parent('li').children('.dropdown').slideUp(300);
 			$(this).text('+');
 			$(this).parent('li').removeClass('active');
-		}
-
+		}  
+		
 	});
-
+	
 });
 
 // Js smartresize
@@ -120,7 +120,7 @@ jQuery(document).ready(function($) {
           function delayed () {
               if (!execAsap)
                   func.apply(obj, args);
-              timeout = null;
+              timeout = null; 
           };
 
           if (timeout)
@@ -128,10 +128,10 @@ jQuery(document).ready(function($) {
           else if (execAsap)
               func.apply(obj, args);
 
-          timeout = setTimeout(delayed, threshold || 100);
+          timeout = setTimeout(delayed, threshold || 100); 
       };
   }
-// smartresize
+// smartresize 
  jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 
 })(jQuery,'smartresize');
@@ -149,7 +149,7 @@ function handleMenu(){
   var heightHeader = $('#header').outerHeight();
   var heightNav = $('#bt_menu').outerHeight();
   var heighttotal = (heightHeader+heightNav);
-
+  
   if(getWidthBrowser() > 1024){
     if(scrollTop > heighttotal){
       if(!$('#bt_menu').hasClass('show')){
@@ -168,11 +168,11 @@ $(window).load(function(){
 	resizeWidth();
 });
 function resizeWidth(){
-	var currentWidth = $(".bt-content-menu").outerWidth();
-	$('.mega-menu ul > li.parent > div').each(function(index, element) {
+	var currentWidth = $(".bt-content-menu").outerWidth();	
+	$('.mega-menu ul > li.parent > div').each(function(index, element) {		
 		var menu = $('.bt-content-menu').offset();
 		var dropdown = $(this).parent().offset();
-
+		
 		i = (dropdown.left + $(this).outerWidth()) - (menu.left + currentWidth);
 		if (i > 0) {
 			$(this).css('margin-left', '-' + (i)+ 'px');
@@ -183,31 +183,32 @@ function resizeWidth(){
 }
 $.fn.bttabs = function() {
 	var selector = this;
-
+	
 	this.each(function() {
-		var obj = $(this);
-
+		var obj = $(this); 
+		
 		$(obj.attr('href')).hide();
-
+		
 		obj.click(function() {
 			$(selector).removeClass('selected');
-
+			
 			$(this).addClass('selected');
-
+			
 			$($(this).attr('href')).fadeIn();
-
+			
 			var tabmodule = $(this).attr('data-crs');
 			loadslider(tabmodule);
-
+			
 			$(selector).not(this).each(function(i, element) {
 				$($(element).attr('href')).hide();
 			});
-
+			
 			return false;
 		});
 	});
 
 	$(this).show();
-
+	
 	$(this).first().click();
 };
+

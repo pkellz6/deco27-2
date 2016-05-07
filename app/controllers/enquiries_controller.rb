@@ -3,6 +3,11 @@ class EnquiriesController < ApplicationController
     @enquiry = Enquiry.new
   end
 
+  def index
+    @enquiry = Enquiry.new
+    render :template => "enquiries/new"
+  end
+
   def create
     @enquiry = Enquiry.new( params.require(:enquiry).permit(:name, :email, :phone, :message) )
     if @enquiry.save

@@ -4,6 +4,9 @@
 	window.onload = function(){
 	    $(".bt-loading").fadeOut("1500", function(){
 	        $('#bt_loading').css("display", "none");
+            if($('#notificationModal').length >0){
+                $('#notificationModal').modal('show');
+            }
 	    });
 	};
 

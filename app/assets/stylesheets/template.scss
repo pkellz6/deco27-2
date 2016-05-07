@@ -92,6 +92,15 @@ $dropdown-border: #8E4346;
 // 	height: 17px;
 // }
 
+.new_enquiry {
+	.input{
+		margin-bottom: 17px;
+	}
+	.error {
+		color: #BC4747;
+	}
+}
+
 @media (min-width: 1200px) { 
 	.product-image-thumb {
 		height: 97px;

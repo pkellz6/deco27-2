@@ -4,6 +4,8 @@
       a href="#{category_product_path @category.slug, product.slug}"
         - if product.product_images.present?
           img.img-responsive alt= product.name src= product.product_images.first.image.url(:medium) title= product.name
+        - else
+          img.img-responsive alt= product.name src='#{ request.base_url }/images/product-no-image.jpg'
       .button-group.button-grid
         button.btn-cart type="button" 
           i.fa.fa-angle-double-right 

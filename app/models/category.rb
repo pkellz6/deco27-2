@@ -4,7 +4,7 @@ class Category < ActiveRecord::Base
   friendly_id :name, use: :slugged
   validates_presence_of :name
 
-  DEFAULT_URL = '/images/missing-categories.png'
+  DEFAULT_URL = '/images/missing-categories.jpg'
   VALIDATE_SIZE = { :in => 0..5.megabytes, :message => 'Photo size too large. Please limit to 5 mb.' }
   has_attached_file :picture,
                     :styles => { large: '876x239#', medium: '270x270#', thumb: '100x100#' },

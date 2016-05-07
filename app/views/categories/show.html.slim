@@ -4,11 +4,15 @@
     #content.col-sm-12
       .bt-block-category.fadeInDown.animated data-animate="fadeInDown" data-delay="200"
         a href="#" 
-          img alt="banner" src= @category.picture.url(:large)
+          - if @category.present?
+            img alt="banner" src= @category.picture.url(:large)
+          - elsif @gallery.present?
+            img alt="banner" src= @gallery.picture.url(:large)
         .block-title
-          h1 = @category.name
-          h4 glamour with an edge
-          a href="#"  Shop Now
+          - if @category.present?
+            h1 = @category.name
+          - elsif @gallery.present?
+            h1 = @gallery.name
 
       .product-filter
         .display.hidden-xs
@@ -17,7 +21,12 @@
           button#grid-view.btn-grid data-toggle="tooltip" title="Grid" type="button" 
             i.fa.fa-th-large
       .row
-        = render partial: 'products/product_card', :collection => @category.products, :as => :product
+        - collection = []
+        - if @category.present?
+          - collection = @category.products
+        - elsif @gallery.present?
+          - collection = Product.where(is_feature: true)
+        = render partial: 'products/product_card', :collection => collection, :as => :product
 
 script src="#{ request.base_url }/javascripts/jquery-2.1.1.min.js"
 script src="#{ request.base_url }/javascripts/bootstrap.min.js"

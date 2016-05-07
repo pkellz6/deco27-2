@@ -1,5 +1,6 @@
 class GalleryController < ApplicationController
   def index
-    render "gallery"
+  	@gallery = Category.new(name: 'Gallery')
+    render :template => "categories/show"
   end
 end

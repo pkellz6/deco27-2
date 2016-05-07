@@ -1,7 +1,7 @@
 .product-layout.product-list.col-xs-12
   .product-thumb
     .image
-      a href="#{category_product_path @category.slug, product.slug}"
+      a href="#{category_product_path product.category.slug, product.slug}"
         - if product.product_images.present?
           img.img-responsive alt= product.name src= product.product_images.first.image.url(:medium) title= product.name
         - else
@@ -12,7 +12,7 @@
           | Read more
     .caption
       .name
-        a href="#{category_product_path @category.slug, product.slug}"
+        a href="#{category_product_path product.category.slug, product.slug}"
           = product.name
       .description
         p= product.description

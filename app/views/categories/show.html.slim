@@ -21,12 +21,9 @@
           button#grid-view.btn-grid data-toggle="tooltip" title="Grid" type="button" 
             i.fa.fa-th-large
       .row
-        - collection = []
-        - if @category.present?
-          - collection = @category.products
-        - elsif @gallery.present?
-          - collection = Product.where(is_feature: true)
-        = render partial: 'products/product_card', :collection => collection, :as => :product
+        = render partial: 'products/product_card', :collection => @products, :as => :product
+      .row
+        = paginate @products
 
 script src="#{ request.base_url }/javascripts/jquery-2.1.1.min.js"
 script src="#{ request.base_url }/javascripts/bootstrap.min.js"

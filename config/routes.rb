@@ -6,8 +6,9 @@ Rails.application.routes.draw do
 
   # get "/" => "index#index"
   # get "/categories" => "categories#index"
+  resources :enquiries
   get "/gallery" => "gallery#index"
-  get "/contact" => "contact#index"
+  get "/contact" => "enquiries#new"
   # get "/porcelains" => "porcelains#index"
   # get "/walls" => "walls#index"
   # get "/doors" => "doors#index"

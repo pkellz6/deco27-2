@@ -1,0 +1,74 @@
+body
+  .container
+    .row
+      #content.col-sm-12
+        p
+        h3 Our Location
+        .panel.panel-default
+          .panel-body
+            .row
+              .col-sm-3
+                strong Miami Store
+                br
+                address Address 1
+              .col-sm-3
+                strong Telephone
+                br 305-859-4848
+        .row
+          .col-md-6
+            iframe.map-top allowfullscreen="" height="370" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCimZ4LwppmarhFIoQame4XrOfPwwV_gmc&zoom=15&q=2646 SW 28th St), Miami, FL 33133, USA" width="100%" 
+          .col-md-6
+            = simple_form_for @enquiry, defaults: { input_html: { class: 'form-horizontal' } } do |f|
+              fieldset
+                h3 Contact Form
+              = f.input :name, label: 'Your Name', input_html: { class: 'form-control' }
+              = f.input :email, label: 'E-Mail Address', input_html: { class: 'form-control' }
+              = f.input :message, label: 'Enquiry', input_html: { class: 'form-control', rows: '5' }
+              .buttons
+                .pull-left
+                  = f.button :submit, "Send"
+  #back_top.back_top title=("Back To Top") 
+    span
+      i.fa.fa-angle-up
+script src="../javascripts/jquery-2.1.1.min.js" 
+script src="../javascripts/bootstrap.min.js" 
+script src="../javascripts/getwidthbrowser.js" 
+script src="../javascripts/cs.bossthemes.js" 
+script src="../javascripts/jquery.jgrowl.js" 
+script src="../javascripts/jquery.appear.js" 
+script src="../javascripts/video.js" 
+script src="../javascripts/jquery.smoothscroll.js" 
+script src="../javascripts/carouFredSel-6.2.1.js" 
+script src="../javascripts/isotope.pkgd.js" 
+script src="../javascripts/plugins.js" 
+script src="../javascripts/jquery.tools.min.js" 
+script src="../javascripts/jquery.revolution.min.js" 
+script src="../javascripts/cloud-zoom.1.0.3.js" 
+script src="../javascripts/custom.js" 
+javascript:
+  jQuery(document).ready(function() {
+      $('#list-view').on('click',function() {
+        $('#content .article-layout').attr('class', 'article-layout article-list col-xs-12');
+        ocalStorage.setItem('display', 'list');
+      });
+
+      $('#grid-view').on('click',function() {
+        cols = $('#column-right, #column-left').length;
+        if (cols == 2) {
+          $('#content .article-layout').attr('class', 'article-layout article-grid col-md-6 col-xs-12');
+        } else if (cols == 1) {
+          $('#content .article-layout').attr('class', 'article-layout article-grid col-md-4 col-sm-6 col-xs-12');
+        } else {
+          $('#content .article-layout').attr('class', 'article-layout article-grid col-md-3 col-sm-4 col-xs-12');
+        }
+        localStorage.setItem('display', 'grid');
+      });
+      if (localStorage.getItem('display') == 'list') {
+        $('#list-view').trigger('click');
+      } else {
+        $('#grid-view').trigger('click');
+      }
+  });
+-if flash.present?
+  javascript:
+    $('#notificationModal').modal('show');

@@ -1,3 +1,14 @@
+-if flash.present?
+  #notification
+    #notificationModal.modal.fade role= "dialog" tabindex= "-1"
+      .modal-dialog
+        .modal-content
+          .modal-body
+            - flash.each do |key, value|
+              .notification-content= value
+          .modal-footer
+            button.btn.btn-default data-dismiss= "modal" type= "button" Close
+            
 #bt_loading
   .bt-loading
     #circularG

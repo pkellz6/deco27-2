@@ -101,6 +101,12 @@ $dropdown-border: #8E4346;
 	}
 }
 
+.category-wrapper {
+	img {
+		margin: auto;
+	}
+}
+
 @media (min-width: 1200px) { 
 	.product-image-thumb {
 		height: 97px;

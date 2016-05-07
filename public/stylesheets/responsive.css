@@ -175,7 +175,7 @@
 		.another-language .product-filter .limit-sort {width:100%;border-top:1px solid #eaeaea}
 		.another-language  .product-filter .box_sort select{width: 140px;}
 	}
-	@media only screen and(max-width: 991px) {		
+	@media only screen and(min-width: 991px) {		
 		.container {width: 748px;}
 	}
 

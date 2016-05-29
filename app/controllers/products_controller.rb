@@ -10,3 +10,4 @@ class ProductsController < ApplicationController
     @category = Category.friendly.find(params[:category_id])
   end
 end
+   

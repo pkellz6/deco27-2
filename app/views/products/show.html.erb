@@ -20,14 +20,14 @@
                                             </a>
                                         	</li>
                                     		<% end %>
-                                    </ul> <a id="prev_image_additional" class="prev nav_thumb" href="javascript:void(0)" style="display:block;" title="prev"><i data-original-title="Previous" class="fa fa-angle-left btooltip">&nbsp;</i></a> <a id="next_image_additional" class="next nav_thumb" href="javascript:void(0)" style="display:block;" title="next"><i data-original-title="Next" class="fa fa-angle-right btooltip">&nbsp;</i></a> 
+                                    </ul> <a id="prev_image_additional" class="prev nav_thumb" href="javascript:void(0)" style="display:block;" title="prev"><i data-original-title="Previous" class="fa fa-angle-left btooltip">&nbsp;</i></a> <a id="next_image_additional" class="next nav_thumb" href="javascript:void(0)" style="display:block;" title="next"><i data-original-title="Next" class="fa fa-angle-right btooltip">&nbsp;</i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-7 col-sm-offset-1">
                         <h2><%= @product.name %></h2>
-                        
+
                         <div class="description">
                             <h3>INFO</h3>
                             <ul class="list-unstyled">
@@ -36,6 +36,8 @@
                                 <% end %>
                                 </li>
                                 <li>- Description:<%= @product.description %></b>
+                                  <br>
+                                <li><%= render 'partials/contact' %></li>
                                 </li>
                             </ul>
                         </div>
@@ -44,6 +46,8 @@
             </div><!-- /.product-info -->
         </div><!-- /#content -->
     </div><!-- /.row -->
+    <h3>Related Products</h3>
+    <%= render 'products/related_products' %>
 </div>
 <script src="<%= request.base_url %>/javascripts/jquery-2.1.1.min.js"></script>
 <script src="<%= request.base_url %>/javascripts/bootstrap.min.js"></script>
@@ -79,7 +83,7 @@
         };
         $('.cloud-zoom, .cloud-zoom-gallery').CloudZoom();
 
-        //pass the images to Fancybox           
+        //pass the images to Fancybox
         var gallerylist = [];
 
         <% @product.product_images.each do |photo| %>
@@ -92,7 +96,7 @@
             $.fancybox.open(gallerylist);
             return false;
         });
-        
+
         $("#boss-image-additional li a").on('click',function() {
             $("#boss_large").attr("href", this)
         });
@@ -141,6 +145,6 @@
       }
     }
     function goToByScroll(id){
-      $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');   
+      $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
     }
 </script>

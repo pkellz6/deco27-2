@@ -3,6 +3,8 @@ class ProductsController < ApplicationController
 
   def show
     @product = @category.products.friendly.find(params[:id])
+    @related_products = @category.products.sample(3)
+    @enquiry = Enquiry.new
   end
 
   private
@@ -10,4 +12,3 @@ class ProductsController < ApplicationController
     @category = Category.friendly.find(params[:category_id])
   end
 end
-   

@@ -30,6 +30,7 @@ gem 'pg'
 gem 'rails_admin'
 #Paper clip for uploading files
 gem 'paperclip'
+gem 'figaro'
 #Help storing paper clip's file to S3
 gem 'aws-sdk', '~> 1.5.7'
 #Bootstrap framwork for front end

@@ -110,30 +110,11 @@
                               <h1>Our Brands</h1>
                           </div>
                           <div id="gallery" class="isotope variable-sizes clearfix">
+                              <% Gallery.first.products.each do |product| %>
                               <div class="item ourbrand">
-                                  <a title="Magento" href="#" class="swipebox"> <img src="../images/brand/brand_1.png" alt="Magento"> </a>
+                                  <a title="<%= product.name%>" href="<%= category_product_path(product.category.slug, product.slug) %>" class="swipebox"> <img src="<%= product.product_images.first.image.url(:thumb) %>" alt="<%= product.name %>"> </a>
                               </div>
-                              <div class="item ourbrand">
-                                  <a title="Gala themes" href="#" class="swipebox"> <img src="../images/brand/brand_2.png" alt="Gala themes"> </a>
-                              </div>
-                              <div class="item ourbrand">
-                                  <a title="Pres themes" href="#" class="swipebox"> <img src="../images/brand/brand_3.png" alt="Pres themes"> </a>
-                              </div>
-                              <div class="item ourbrand">
-                                  <a title="Egg themes" href="#" class="swipebox"> <img src="../images/brand/brand_4.png" alt="Egg themes"> </a>
-                              </div>
-                              <div class="item ourbrand">
-                                  <a title="WPDance" href="#" class="swipebox"> <img src="../images/brand/brand_5.png" alt="WPDance"> </a>
-                              </div>
-                              <div class="item ourbrand">
-                                  <a title="Shopify" href="#" class="swipebox"> <img src="../images/brand/brand_6.png" alt="Shopify"> </a>
-                              </div>
-                              <div class="item ourbrand">
-                                  <a title="Codespot" href="#" class="swipebox"> <img src="../images/brand/brand_7.png" alt="Codespot"> </a>
-                              </div>
-                              <div class="item ourbrand">
-                                  <a title="Boss" href="#" class="swipebox"> <img src="../images/brand/brand_8.png" alt="Boss"> </a>
-                              </div>
+                              <% end %>
                           </div>
                       </div><!-- /.boss_gallery -->
                   </div>

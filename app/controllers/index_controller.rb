@@ -1,5 +1,6 @@
 class IndexController < ApplicationController
   def index
     render "index"
-  end 
+    @products = Gallery.first.products
+  end
 end

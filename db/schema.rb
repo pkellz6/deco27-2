@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160507150635) do
+ActiveRecord::Schema.define(version: 20160614222947) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,6 +68,12 @@ ActiveRecord::Schema.define(version: 20160507150635) do
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
+  create_table "galleries", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "name"
+  end
+
   create_table "photos", force: :cascade do |t|
     t.string   "image_file_name"
     t.string   "image_content_type"
@@ -90,6 +96,7 @@ ActiveRecord::Schema.define(version: 20160507150635) do
     t.string   "slug"
     t.boolean  "is_feature",  default: false
     t.string   "brand"
+    t.integer  "gallery_id"
   end
 
   add_index "products", ["slug"], name: "index_products_on_slug", unique: true, using: :btree

@@ -1,7 +1,6 @@
 class GalleryController < ApplicationController
   def index
-  	@gallery = Category.new(name: 'Gallery')
-  	@products = Product.featured.page params[:page]
-    #render :template => "categories/show"
+  	@gallery = Gallery.first
+  	@products = @gallery.products params[:page]
   end
 end

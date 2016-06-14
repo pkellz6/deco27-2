@@ -1,6 +1,7 @@
 class Product < ActiveRecord::Base
   extend FriendlyId
   belongs_to :category
+  belongs_to :gallery
   has_many :product_images
   accepts_nested_attributes_for :product_images, allow_destroy: true
   scope :featured, -> { where(is_feature: true)}

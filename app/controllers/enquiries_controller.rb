@@ -11,8 +11,8 @@ class EnquiriesController < ApplicationController
   def create
     @enquiry = Enquiry.new( params.require(:enquiry).permit(:name, :email, :phone, :message) )
     if @enquiry.save
-      redirect_to new_enquiry_path, notice: 'Your message has been sent.'
-    elsif 
+      redirect_to :back, notice: 'Your message has been sent.'
+    elsif
       flash[:notice] = 'There are errors in your form'
       render :new
     end

@@ -112,7 +112,7 @@
                           <div id="gallery" class="isotope variable-sizes clearfix">
                               <% Gallery.first.products.each do |product| %>
                               <div class="item ourbrand">
-                                  <a title="<%= product.name%>" href="<%= category_product_path(product.category.slug, product.slug) %>" class="swipebox"> <img src="<%= product.product_images.first.image.url(:original) %>" alt="<%= product.name %>"> </a>
+                                  <a title="<%= product.name%>" href="<%= category_product_path(product.category.slug, product.slug) %>" class="swipebox"> <img src="<%= product.product_images.first.image.url(:large) %>" alt="<%= product.name %>"> </a>
                               </div>
                               <% end %>
                           </div>

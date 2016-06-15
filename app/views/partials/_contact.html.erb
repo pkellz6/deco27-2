@@ -2,6 +2,5 @@
   <%= simple_form_for @enquiry do |f| %>
     <h3>Contact Us</h3>
   <%= f.input :name, label: 'Your Name', input_html: { class: 'form-control' } %><%= f.input :email, label: 'E-Mail Address', input_html: { class: 'form-control' } %>
-  <%= f.input :message, label: 'Enquiry', input_html: { class: 'form-control', rows: '5' } %>
   <%= f.button :submit, "Contact Us" %>
         <% end %>

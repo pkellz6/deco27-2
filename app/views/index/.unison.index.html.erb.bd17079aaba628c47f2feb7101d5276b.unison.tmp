@@ -46,7 +46,7 @@
                             </div>
                             <div class="title"> <i></i><sup></sup><sub></sub>
                                 <p class="cate-name">Porcelains</p>
-                                <p class="count-product"></p> <a href="/categories/porcelains">Shop now</a> </div>
+                                <p class="count-product"></p> <a href="#">Shop now</a> </div>
                         </div>
                         <div class="right">
                             <div class="image">
@@ -54,7 +54,7 @@
                             </div>
                             <div class="title">
                                 <h2></h2> <i></i><sup></sup>
-                                <p class="cate-name">Doors</p> <a href="/categories/doors">Shop now</a> </div>
+                                <p class="cate-name">Doors</p> <a href="#">Shop now</a> </div>
                         </div>
                     </div><!-- /.block-shopnow -->
                     <div class="block-shopnow">
@@ -65,7 +65,7 @@
                             </div>
                             <div class="title"> <i></i><sup></sup><sub></sub>
                                 <p class="cate-name">Walls</p>
-                                <p class="count-product"></p> <a href="/categories/walls">Shop now</a> </div>
+                                <p class="count-product"></p> <a href="#">Shop now</a> </div>
                         </div>
                         <div class="right">
                             <div class="image">
@@ -73,7 +73,7 @@
                             </div>
                             <div class="title">
                                 <h2></h2><i></i><sup></sup>
-                                <p class="cate-name">Hardwood Floors</p> <a href="/categories/hardwood-floors">Shop now</a> </div>
+                                <p class="cate-name">Hardwood Floors</p> <a href="#">Shop now</a> </div>
                         </div>
                     </div><!-- /.block-shopnow -->
                 </div>
@@ -107,7 +107,7 @@
                   <div class="col-xs-12 col-sm-12 col-md-12">
                       <div class="boss_gallery">
                           <div class="gallery-title">
-                              <h1 style="color:white;">Gallery</h1>
+                              <h1>Gallery</h1>
                           </div>
                           <div id="gallery" class="isotope variable-sizes clearfix">
                               <% Gallery.first.products.each do |product| %>

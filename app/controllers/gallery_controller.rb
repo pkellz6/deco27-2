@@ -1,6 +1,6 @@
 class GalleryController < ApplicationController
   def index
   	@gallery = Gallery.first
-  	@products = @gallery.products params[:page]
+  	@photos = @gallery.product_images params[:page]
   end
 end

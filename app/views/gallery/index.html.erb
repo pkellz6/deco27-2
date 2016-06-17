@@ -25,17 +25,17 @@
         </div>
         <!-- /.product-filter -->
         <div class="row">
-          <% @products.each do |product| %>
+          <% @photos.each do |image| %>
           <div class="product-layout product-list col-xs-12">
             <div class="product-thumb">
               <div class="image">
-                <%= link_to image_tag(product.product_images.first.image.url(:thumb), :class => "img-responsive"), "#", data: {toggle: "modal", target: "##{product.id}Modal"} %>
+                <%= link_to image_tag(image.image.url(:thumb), :class => "img-responsive"), "#", data: {toggle: "modal", target: "##{image.product.blank? ? "_" : image.product.id}Modal"} %>
               </div>
               <div class="caption">
-                <div class="name"><a href="#"><%= product.name %></a>
+                <div class="name"><a href="#"><%= image.name %></a>
                 </div>
                 <div class="description">
-                  <p><%= product.description %></p>
+                  <p><%= image.product.blank? ? '' : image.product.description %></p>
                 </div>
               </div>
               <div class="button-group button-list">
@@ -47,8 +47,9 @@
               </div>
             </div>
           </div>
-
-            <div id="<%= product.id%>Modal" class="modal fade" role="dialog">
+          <% if image.product.blank? %>
+          <% else %>
+            <div id="<%=image.product.id%>Modal" class="modal fade" role="dialog">
               <div style="width: 95%; max-width: 900px;" class="modal-dialog">
                 <div class="modal-content">
                 <div class="modal-header">
@@ -62,24 +63,24 @@
                         <div class="col-md-6 col-xs-12">
                           <div class="bt-product-zoom">
                             <div class="image">
-                              <%= image_tag(product.product_images.first.image.url(:large), :class => "img-responsive") %>
+                              <%= image_tag(image.image.url(:large), :class => "img-responsive") %>
                               </a>
                             </div>
                           </div>
                         </div>
                         <div class="col-md-6 col-xs-12">
                           <div class="product-name">
-                            <h1><%= product.name %></h1>
+                            <h1><%= image.name %></h1>
                           </div>
                           <div class="description">Product Description</div>
                           <div class="button-group">
-                            <%= button_to "View #{product.name}", category_product_path(product.category.slug, product.slug), method: :get %>
+                            <%=button_to "View #{image.product.name}", category_product_path(image.product.category.slug, image.product.slug), method: :get %>
                           </div>
                         </div>
                         <div class="col-xs-12">
                           <div class="image-additional">
                             <ul id="boss_image_additional">
-                              <% product.product_images.each do |product_image| %>
+                              <% image.product.product_images.each do |product_image| %>
                               <li>
                                 <a href="<%= product_image.image.url(:thumb)%>" title="<%= product_image.name %>" class="cloud-zoom-gallery" rel="useZoom: 'zoomqs', smallImage: '<%= product_image.image.url(:thumb)%>'"><img src="<%= product_image.image.url(:thumb)%>" title="<%= product_image.name %>" alt="<%= product_image.name %>">
                                 </a>
@@ -95,6 +96,7 @@
               </div>
             </div>
           </div>
+          <% end %>
             <% end %>
           </div>
           <!-- /.product-layout -->

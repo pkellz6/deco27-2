@@ -41,7 +41,7 @@
                     <div class="block-shopnow">
                         <div class="left">
                             <div class="image">
-                                <a href="#"> <img src="../images/banner/deco1.jpg" title="banner" alt="banner">
+                              <a href="#"> <%= image_tag('DecoPorcelainsHP.jpg', title: "banner", alt:"banner", height: '380', width: '570')%> </a>
                                 </a>
                             </div>
                             <div class="title"> <i></i><sup></sup><sub></sub>
@@ -50,7 +50,7 @@
                         </div>
                         <div class="right">
                             <div class="image">
-                                <a href="#"> <img src="../images/banner/deco2.jpg" title="banner" alt="banner"> </a>
+                              <a href="#"> <img src="../images/banner/deco4.jpg" title="banner" alt="banner"> </a>
                             </div>
                             <div class="title">
                                 <h2></h2> <i></i><sup></sup>
@@ -60,7 +60,7 @@
                     <div class="block-shopnow">
                         <div class="left">
                             <div class="image">
-                                <a href="#"> <img src="../images/banner/deco3.jpg" title="banner" alt="banner">
+                              <a href="#"> <%= image_tag('decoWallHP.jpeg', title: "banner", alt:"banner", height: '380', width: '570')%> </a>
                                 </a>
                             </div>
                             <div class="title"> <i></i><sup></sup><sub></sub>
@@ -69,7 +69,7 @@
                         </div>
                         <div class="right">
                             <div class="image">
-                                <a href="#"> <img src="../images/banner/deco4.jpg" title="banner" alt="banner"> </a>
+                                <a href="#"> <%= image_tag('DecoHWFloorsHP.jpg', title: "banner", alt:"banner", height: '380', width: '570')%> </a>
                             </div>
                             <div class="title">
                                 <h2></h2><i></i><sup></sup>
@@ -110,9 +110,9 @@
                               <h1 style="color:white;">Gallery</h1>
                           </div>
                           <div id="gallery" class="isotope variable-sizes clearfix">
-                              <% Gallery.first.products.each do |product| %>
+                              <% Gallery.first.product_images.each do |image| %>
                               <div class="item ourbrand">
-                                  <a title="<%= product.name%>" href="<%= category_product_path(product.category.slug, product.slug) %>" class="swipebox"> <img src="<%= product.product_images.first.image.url(:large) %>" alt="<%= product.name %>"> </a>
+                                  <a title="<%= image.name%>" href="<%= image.product.blank? ? "#" : category_product_path(image.product.category.slug, image.product.slug)%>" class="swipebox"> <img src="<%= image.image.url(:large) %>" alt="<%= image.name %>"> </a>
                               </div>
                               <% end %>
                           </div>

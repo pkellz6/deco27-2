@@ -1,0 +1,126 @@
+/* line 13, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+#logo a {
+  position: relative;
+  top: 10px;
+}
+
+/* line 19, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+.circularG {
+  background-color: #CF8C7C;
+}
+
+/* line 23, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+#top {
+  padding: 12px 0;
+}
+
+/* line 27, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+#top a:hover,
+#top li.dropdown.open > a,
+#top .btn-group.open > .btn,
+#top .dropdown-menu > li > a:hover,
+.currency .btn:hover,
+.language .btn:hover {
+  color: #8E4346;
+}
+
+/* line 36, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+#top .bt-language {
+  letter-spacing: 2px;
+}
+
+/* line 40, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+.mega-menu > ul.nav > li > a:hover, .mega-menu > ul.nav > li > a:focus {
+  color: #C02C32;
+}
+
+/* line 44, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+.mega-menu a:hover {
+  color: #C02C32;
+}
+
+/* line 48, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+.block-shopnow .title > a {
+  background: #be2730;
+  border: 1px solid #892C2A;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 54, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+.block-shopnow .title > a:hover {
+  border: 1px solid white;
+  color: white;
+}
+
+/* line 59, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+.mega-menu > ul.nav > li .dropdown {
+  border-bottom: 3px solid #8E4346;
+}
+
+/* line 63, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+.product-grid {
+  margin-right: 0;
+}
+
+/* line 67, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+.main-content {
+  margin-top: 30px;
+}
+
+/* line 71, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+.bt-block-category img {
+  width: 100%;
+}
+
+/* line 75, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+.product-grid .product-thumb:hover .button-group .btn-cart,
+.product-layout.element-4 .product-thumb:hover .button-group .btn-cart,
+.product-related .relt_product:hover .button-group .btn-cart {
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* line 83, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+.product-info {
+  margin-top: 30px;
+}
+
+/* line 87, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+.bt-product-zoom .image img {
+  margin: auto;
+}
+
+/* line 96, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+.new_enquiry .input {
+  margin-bottom: 17px;
+}
+/* line 99, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+.new_enquiry .error {
+  color: #BC4747;
+}
+
+/* line 105, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+.category-wrapper img {
+  margin: auto;
+}
+
+@media (min-width: 1200px) {
+  /* line 111, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+  .product-image-thumb {
+    height: 97px;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* line 118, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+  .product-image-thumb {
+    height: 78px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 124, /home/nitrous/code/deco27-2/app/assets/stylesheets/template.scss */
+  .product-image-thumb {
+    height: 71px;
+  }
+}

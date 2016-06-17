@@ -3,12 +3,12 @@
     .image
       a href="#{category_product_path product.category.slug, product.slug}"
         - if product.product_images.present?
-          img.img-responsive alt= product.name src= product.product_images.first.image.url(:medium) title= product.name
+          img.img-responsive alt= product.name src= product.product_images.first.image.url(:original) title= product.name
         - else
           img.img-responsive alt= product.name src='#{ request.base_url }/images/product-no-image.jpg'
       .button-group.button-grid
-        button.btn-cart type="button" 
-          i.fa.fa-angle-double-right 
+        button.btn-cart type="button"
+          i.fa.fa-angle-double-right
           | Read more
     .caption
       .name
@@ -17,6 +17,6 @@
       .description
         p= product.description
     .button-group.button-list
-      button.btn-cart type="button" 
-        i.fa.fa-angle-double-right 
+      button.btn-cart type="button"
+        i.fa.fa-angle-double-right
         | Read more

@@ -1,6 +1,6 @@
 /* =========================================
 ===  CSS TABLE CONTENT  ====
-============================================ 
+============================================
 
 	1.0 Global Style
 	2.0 Top
@@ -45,7 +45,7 @@ h1{
 	font-weight:400;
 	color:#3c3b48;
 	text-transform:uppercase;
-	
+
 }
 h2{
 	font-family: 'Lato', sans-serif;
@@ -295,7 +295,7 @@ a:hover,a:focus{
 }
 ul, ol {
     list-style-type: none;
-	padding:0; 
+	padding:0;
 	margin:0;
 }
 img{
@@ -354,11 +354,11 @@ span.hidden-xs, span.hidden-sm, span.hidden-md, span.hidden-lg {
 	color:#be2730
 }
 #top #top-links.pull-right {
-	width:85%; 
+	width:85%;
 	text-align:right;
 }
 #top ul.list-inline{
-	float:right; 
+	float:right;
 	margin-bottom:0;
 	margin-right:38px;
 }
@@ -367,7 +367,7 @@ span.hidden-xs, span.hidden-sm, span.hidden-md, span.hidden-lg {
 }
 #top .pull-right .fa{
 	font-size:12px;
-	vertical-align:0; 
+	vertical-align:0;
 	margin-left:0.5em;
 }
 #top .dropdown-menu,.bt-mobile .dropdown-menu{
@@ -404,7 +404,7 @@ span.hidden-xs, span.hidden-sm, span.hidden-md, span.hidden-lg {
 }
 .currency .btn-group,.language .btn-group{
 	vertical-align:top;
-	padding-bottom:10px; 
+	padding-bottom:10px;
 	padding-right:5px
 }
 .currency  .dropdown-menu,.language .dropdown-menu{
@@ -463,7 +463,7 @@ span.hidden-xs, span.hidden-sm, span.hidden-md, span.hidden-lg {
 	border:none;
 }
 .currency .btn:hover,.language .btn:hover{
-	color:#be2730; 
+	color:#be2730;
 	text-decoration:none;
 	background:none;
 }
@@ -901,7 +901,7 @@ footer .bt-footer-middle>.container{
 .bt-footer-middle>div>div .col-md-12{
 	padding:0;
 }
-footer h3{	
+footer h3{
 	font-family:'Lato',sans-serif;
 	color:#ebebeb;
 }
@@ -986,7 +986,7 @@ footer .bt-footer-middle h3,.bt-footer-middle .bt-block-footer a{
 }
 .bt-footer-bottom  .payment{
 	float:right;
-	text-align:right;    
+	text-align:right;
 	margin-top: -10px;
 }
 .bt-footer-bottom  .payment ul li{
@@ -1002,7 +1002,7 @@ footer .bt-footer-middle h3,.bt-footer-middle .bt-block-footer a{
 	display:inline-block;
 	vertical-align:top;
 	margin-bottom:3px;
-	
+
 }
 .bt-footer-bottom  .link ul li:first-child a{
 	border-left:none;
@@ -1045,7 +1045,7 @@ footer .bt-footer-middle h3,.bt-footer-middle .bt-block-footer a{
 	-webkit-border-radius:50%;
 	-moz-border-radius:50%;
     box-shadow: 0 0 0 4px #c72a2d;
-	-webkit-box-shadow: 0 0 0 4px #c72a2d; 
+	-webkit-box-shadow: 0 0 0 4px #c72a2d;
 	-moz-box-shadow: 0 0 0 4px #c72a2d;
     color: #c72a2d;
     display: inline-block;
@@ -1141,16 +1141,16 @@ footer .bt-footer-middle h3,.bt-footer-middle .bt-block-footer a{
 	margin: 1em 0;
 }
 .btn-xs {
-	
+
 }
 .btn-sm {
-	
+
 }
 .btn-group > .btn-sm {
-	
+
 }
 .btn-group > .btn-lg {
-	
+
 }
 .btn-default {
 	color: #777;
@@ -1172,7 +1172,7 @@ footer .bt-footer-middle h3,.bt-footer-middle .bt-block-footer a{
 	border-color: #f89406 #f89406 #ad6704;
 }
 .btn-warning:hover, .btn-warning:active, .btn-warning.active, .btn-warning.disabled, .btn-warning[disabled] {
-	
+
 }
 .btn-danger {
 	color: #ffffff;
@@ -1296,7 +1296,7 @@ footer .bt-footer-middle h3,.bt-footer-middle .bt-block-footer a{
 	margin-bottom:10px;
 }
 .box.bt-latest .box-content .box-item{
-	overflow:hidden; 
+	overflow:hidden;
 	border-top:1px solid #ebebeb;
 	padding:1.5em 0;
 }
@@ -1554,7 +1554,7 @@ footer .bt-footer-middle h3,.bt-footer-middle .bt-block-footer a{
 	transition:all 0.5s ease 0s;
 	-moz-transition:all 0.5s ease 0s;
 	-webkit-transition:all 0.5s ease 0s;
-	
+
 }
 .bt-block-category:hover img{
 	transform: scale(1.1) rotate(-0.5deg);
@@ -1881,7 +1881,7 @@ h1 + .product-filter{
 	width:100%;
 	border:1px solid #eaeaea;
 	visibility:hidden;
-	opacity:0; 
+	opacity:0;
 	filter:alpha(opacity=0);
 	height:40px;
 	line-height:0;
@@ -2210,7 +2210,7 @@ h1 + .product-filter{
 	border-bottom:1px solid #c9c9c9;
 	border-left:none;
 	padding:6px 10px;
-	
+
 }
 .input-group.date button.btn-default i, .input-group.time button.btn-default i, .input-group.datetime button.btn-default i{
 	line-height:22px;
@@ -2572,7 +2572,7 @@ h1 + .product-filter{
 	max-width:180px;
 }
 .compare-info .image{
-	position:relative; 
+	position:relative;
 	padding-top:52px;
 	text-align:center;
 	padding-bottom:30px
@@ -2613,7 +2613,7 @@ h1 + .product-filter{
 .compare-info .btn-cart{
 	color:#fff;
 	background:#be2730;
-	border:1px solid #be2730;	
+	border:1px solid #be2730;
 }
 .compare-info .btn-cart .fa,.compare-info .btn-wishlist .fa{
 	margin-right:8px;
@@ -2741,7 +2741,7 @@ h1+ .control-label{
 	color:#484848;
 	line-height:17px;
 	padding:20px 24px;
-	
+
 }
 .cart-info .table  td.image,.cart-info .table  td.name,.checkout .table  td.name ,
 .wishlist-info .table td.image,.wishlist-info .table  td.name{
@@ -2993,7 +2993,7 @@ a.forgotten:hover{
 .checkout .panel .panel-body  .form-control{
 	width:90%;
 }
-.checkout  .form-group.required .control-label:after{	
+.checkout  .form-group.required .control-label:after{
 	content:"*";
 	color:#ed1c24;
 	margin-left:3px;
@@ -3178,7 +3178,7 @@ h1.block-title +ul li a{
 	line-height:1.55em;
 }
 .wishlist-info + .buttons{
-	margin:15px 0 56px; 
+	margin:15px 0 56px;
 }
 .wishlist-info .price{
 	font-weight:400;
@@ -3286,6 +3286,7 @@ p +.content-login{
 }
 .block-shopnow >div{
 	position:relative;
+	padding-bottom: 5%;
 }
 .block-shopnow .left{
 	float:left;
@@ -3295,6 +3296,8 @@ p +.content-login{
 }
 .block-shopnow .title {
 	position:absolute;
+	padding-top:10%;
+	padding-bottom:10%;
 	left:0;
 	width:100%;
 	text-align:center;
@@ -3331,7 +3334,7 @@ p +.content-login{
 }
 .block-shopnow  .title .cate-name{
 	font-family:'Quicksand',sans-serif;
-	font-size:30px;
+	font-size:45px;
 	line-height:32px;
 	text-transform:uppercase;
 }
@@ -3378,7 +3381,8 @@ p +.content-login{
 	-moz-transform:scale(1.15);
 }
 .block-shopnow .image{
-	overflow:hidden;
+
+
 }
 .bt-featured-pro {
 	margin-bottom:60px;
@@ -3530,7 +3534,7 @@ p +.content-login{
 	border-radius:0;
 }
 .bt-block-home-bg .title p{
-	color:#fff; 
+	color:#fff;
 	line-height:25px;
 	max-width:852px;
 	margin:0 auto;
@@ -3845,9 +3849,9 @@ p +.content-login{
 	right: 0;
 }
 /*Safari*/
-@media screen and (-webkit-min-device-pixel-ratio:0) { 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
   .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"]{margin-left:-18px;}
-} 
+}
 
 /* Color Style */
 #cart .dropdown-menu .cart_bottom .buttons,

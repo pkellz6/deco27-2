@@ -50,11 +50,11 @@
                         </div>
                         <div class="right">
                             <div class="image">
-                              <a href="#"> <img src="../images/banner/deco4.jpg" title="banner" alt="banner"> </a>
+                              <a href="#"><%= image_tag('deco4.jpg', title: "banner", alt:"banner", height: '380', width: '570')%> </a>
                             </div>
-                            <div class="title">
-                                <h2></h2> <i></i><sup></sup>
-                                <p class="cate-name">Doors</p> <a href="/categories/doors">Shop now</a> </div>
+                            <div class="title"> <i></i><sup></sup><sub></sub>
+                                <p class="cate-name">Doors</p>
+                                <p class="count-product"></p> <a href="/categories/doors">Shop now</a> </div>
                         </div>
                     </div><!-- /.block-shopnow -->
                     <div class="block-shopnow">
@@ -71,9 +71,9 @@
                             <div class="image">
                                 <a href="#"> <%= image_tag('DecoHWFloorsHP.jpg', title: "banner", alt:"banner", height: '380', width: '570')%> </a>
                             </div>
-                            <div class="title">
-                                <h2></h2><i></i><sup></sup>
-                                <p class="cate-name">Hardwood Floors</p> <a href="/categories/hardwood-floors">Shop now</a> </div>
+                            <div class="title"> <i></i><sup></sup><sub></sub>
+                                <p class="cate-name">Hardwood Floors</p>
+                                <p class="count-product"></p> <a href="/categories/hardwood-floors">Shop now</a> </div>
                         </div>
                     </div><!-- /.block-shopnow -->
                 </div>
@@ -112,7 +112,7 @@
                           <div id="gallery" class="isotope variable-sizes clearfix">
                               <% @images.each do |image| %>
                               <div class="item ourbrand">
-                                  <a title="<%= image.name%>" href="<%= image.product.blank? ? " " : category_product_path(image.product.first.category.slug, image.product.first.slug)%>" class="swipebox"> <img src="<%= image.image.url(:large) %>" alt="<%= image.name %>"> </a>
+                                  <a title="<%= image.name%>" href="/gallery" class="swipebox"> <img src="<%= image.image.url(:large) %>" alt="<%= image.name %>"> </a>
                               </div>
                               <% end %>
                           </div>

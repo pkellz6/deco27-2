@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160617001337) do
+ActiveRecord::Schema.define(version: 20160617034839) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -74,6 +74,17 @@ ActiveRecord::Schema.define(version: 20160617001337) do
     t.string   "name"
   end
 
+  create_table "gallery_images", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "gallery_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
   create_table "photos", force: :cascade do |t|
     t.string   "image_file_name"
     t.string   "image_content_type"
@@ -90,14 +101,15 @@ ActiveRecord::Schema.define(version: 20160617001337) do
 
   create_table "products", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
     t.string   "description"
     t.integer  "category_id"
     t.string   "slug"
-    t.boolean  "is_feature",  default: false
+    t.boolean  "is_feature",       default: false
     t.string   "brand"
     t.integer  "gallery_id"
+    t.integer  "gallery_image_id"
   end
 
   add_index "products", ["slug"], name: "index_products_on_slug", unique: true, using: :btree

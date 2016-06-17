@@ -1,8 +1,8 @@
 class IndexController < ApplicationController
-  Rails.application.routes.url_helpers
 
   def index
+    @images = Gallery.first.gallery_images.sample(8)
     render "index"
-    @products = Gallery.first.products
   end
+
 end

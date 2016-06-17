@@ -1,9 +1,0 @@
-class GalleryImage < Photo
-	belongs_to :gallery
-  has_one :product
-  
-	rails_admin do
-    parent Gallery
-  end
-
-e

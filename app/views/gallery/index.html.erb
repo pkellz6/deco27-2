@@ -29,13 +29,13 @@
           <div class="product-layout product-list col-xs-12">
             <div class="product-thumb">
               <div class="image">
-                <%= link_to image_tag(image.image.url(:large), :class => "img-responsive"), "#", data: {toggle: "modal", target: "##{image.product.blank? ? "_" : image.product.id}Modal"} %>
+                <%= link_to image_tag(image.image.url(:large), :class => "img-responsive"), "#", data: {toggle: "modal", target: "##{image.product.blank? ? "_" : image.product.first.id}Modal"} %>
               </div>
               <div class="caption">
                 <div class="name"><a href="#"><%= image.name %></a>
                 </div>
                 <div class="description">
-                  <p><%= image.product.blank? ? '' : image.product.description %></p>
+                  <p><%= image.product.blank? ? '' : image.product.first.description %></p>
                 </div>
               </div>
               <div class="button-group button-list">
@@ -49,7 +49,7 @@
           </div>
           <% if image.product.blank? %>
           <% else %>
-            <div id="<%=image.product.id%>Modal" class="modal fade" role="dialog">
+            <div id="<%=image.product.first.id%>Modal" class="modal fade" role="dialog">
               <div style="width: 95%; max-width: 900px;" class="modal-dialog">
                 <div class="modal-content">
                 <div class="modal-header">
@@ -74,13 +74,13 @@
                           </div>
                           <div class="description">Product Description</div>
                           <div class="button-group">
-                            <%=button_to "View #{image.product.name}", category_product_path(image.product.category.slug, image.product.slug), method: :get %>
+                            <%=button_to "View #{image.product.first.name}", category_product_path(image.product.first.category.slug, image.product.first.slug), method: :get %>
                           </div>
                         </div>
                         <div class="col-xs-12">
                           <div class="image-additional">
                             <ul id="boss_image_additional">
-                              <% image.product.product_images.each do |product_image| %>
+                              <% image.product.first.product_images.each do |product_image| %>
                               <li>
                                 <a href="<%= product_image.image.url(:thumb)%>" title="<%= product_image.name %>" class="cloud-zoom-gallery" rel="useZoom: 'zoomqs', smallImage: '<%= product_image.image.url(:thumb)%>'"><img src="<%= product_image.image.url(:thumb)%>" title="<%= product_image.name %>" alt="<%= product_image.name %>">
                                 </a>

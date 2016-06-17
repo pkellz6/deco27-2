@@ -8,7 +8,8 @@ class GalleryImage < ActiveRecord::Base
                         :content_type => { :content_type => /\Aimage\/.*\Z/},
                         :size => VALIDATE_SIZE
   belongs_to :gallery
-  has_one :product
+  has_many :product
+  validates_presence_of :product
 
   def s3_credentials
     {:bucket => ENV['s3_bucket'], :access_key_id => ENV['aws_access_key_id'], :secret_access_key => ENV['aws_access_secret']}
@@ -17,5 +18,6 @@ class GalleryImage < ActiveRecord::Base
 	rails_admin do
     parent Gallery
   end
+
 
 end

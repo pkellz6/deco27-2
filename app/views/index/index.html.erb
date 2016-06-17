@@ -56,8 +56,7 @@
                                 <p class="cate-name">Doors</p>
                                 <p class="count-product"></p> <a href="/categories/doors">Shop now</a> </div>
                         </div>
-                    </div><!-- /.block-shopnow -->
-                    <div class="block-shopnow">
+  
                         <div class="left">
                             <div class="image">
                               <a href="#"> <%= image_tag('decoWallHP.jpeg', title: "banner", alt:"banner", height: '380', width: '570')%> </a>
@@ -107,13 +106,60 @@
                   <div class="col-xs-12 col-sm-12 col-md-12">
                       <div class="boss_gallery">
                           <div class="gallery-title">
-                              <h1 style="color:white;">Gallery</h1>
+                              <a  href="/gallery"><h1 style="color:white;">Gallery</h1></a>
                           </div>
                           <div id="gallery" class="isotope variable-sizes clearfix">
                               <% @images.each do |image| %>
                               <div class="item ourbrand">
-                                  <a title="<%= image.name%>" href="/gallery" class="swipebox"> <img src="<%= image.image.url(:large) %>" alt="<%= image.name %>"> </a>
+                                  <%= link_to image_tag(image.image.url(:large), :class => "img-responsive"), "#", data: {toggle: "modal", target: "##{image.product.blank? ? "_" : image.product.first.id}Modal", href: "##{image.product.first.id}Modal"} %>
                               </div>
+                              <div id="<%=image.product.first.id%>Modal" class="modal fade" role="dialog" >
+                                <div style="width: 95%; max-width: 900px;" class="modal-dialog">
+                                  <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" title="Close" data-dismiss="modal" aria-hidden="true">×</button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div id="notification"></div>
+                                    <div id="modal-content">
+                                      <div class="product-info-qs product-info">
+                                        <div class="row">
+                                          <div class="col-md-6 col-xs-12">
+                                            <div class="bt-product-zoom">
+                                              <div class="image">
+                                                <%= image_tag(image.image.url(:large), :class => "img-responsive") %>
+                                                </a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-6 col-xs-12">
+                                            <div class="product-name">
+                                              <h1><%= image.name %></h1>
+                                            </div>
+                                            <div class="description">Product Description</div>
+                                            <div class="button-group">
+                                              <%=button_to "View #{image.product.first.name}", category_product_path(image.product.first.category.slug, image.product.first.slug), method: :get %>
+                                            </div>
+                                          </div>
+                                          <div class="col-xs-12">
+                                            <div class="image-additional">
+                                              <ul id="boss_image_additional">
+                                                <% image.product.first.product_images.each do |product_image| %>
+                                                <li>
+                                                  <a href="<%= product_image.image.url(:thumb)%>" title="<%= product_image.name %>" class="cloud-zoom-gallery" rel="useZoom: 'zoomqs', smallImage: '<%= product_image.image.url(:thumb)%>'"><img src="<%= product_image.image.url(:thumb)%>" title="<%= product_image.name %>" alt="<%= product_image.name %>">
+                                                  </a>
+                                                </li>
+                                                <% end %>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                               <% end %>
                           </div>
                       </div><!-- /.boss_gallery -->
@@ -121,6 +167,50 @@
               </div>
             </div>
         </div><!-- /.bt-block-theme-features -->
+
+        <div id="back_top" class="back_top" title="Back To Top"><span><i class="fa fa-angle-up"></i></span></div>
+        <div aria-hidden="true" role="dialog" tabindex="-1" class="modal fade" id="myModal">
+          <div style="width: 95%; max-width: 900px;" class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" title="Close" data-dismiss="modal" aria-hidden="true">×</button>
+              </div>
+              <div class="modal-body">
+                <div id="notification"></div>
+                <div id="modal-content">
+                  <div class="product-info-qs product-info">
+                    <div class="row">
+                      <div class="col-md-6 col-xs-12">
+                        <div class="bt-product-zoom">
+                          <div class="image">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-xs-12">
+                        <div class="product-name">
+                        </div>
+                        <div class="description">Product Description</div>
+                        <div class="button-group">
+                        </div>
+                      </div>
+                      <div class="col-xs-12">
+                        <div class="image-additional">
+                          <ul id="boss_image_additional">
+                            <li>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div id="back_top" class="back_top" title="Back To Top"><span><i class="fa fa-angle-up"></i></span></div>
         <div aria-hidden="true" role="dialog" tabindex="-1" class="modal fade" id="myModal">
             <div style="width: 95%; max-width: 900px;" class="modal-dialog">

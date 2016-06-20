@@ -766,6 +766,7 @@ footer .bt-footer-top .col-md-12{
 }
 .bt-footer-top .footer-about img,.bt-footer-top .boss-recent-post .box-heading,.bt-footer-top .box-tweeter .tweeter-heading h3{
 	margin-bottom:2em;
+	max-width: 70%;
 }
 .bt-footer-top .footer-contact{
 	margin-bottom:3em;

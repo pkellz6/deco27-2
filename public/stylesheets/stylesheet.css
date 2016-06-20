@@ -745,7 +745,6 @@ header{
 #column-right{padding-right:0}
 /* footer */
 #bt_footer{
-	background-color:#4a4c4c;
 	padding:58px 0 28px;
 }
 footer {
@@ -3950,7 +3949,7 @@ a.btn-readmore,
     border-color: #c4bab6
 }
 #bt_footer {
-    background-color: #4a4c4c
+    background-color: rgba(130, 130, 130, 1);
 }
 footer,
 footer h3,

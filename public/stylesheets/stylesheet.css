@@ -744,9 +744,6 @@ header{
 #content.col-sm-9{padding-left:0}
 #column-right{padding-right:0}
 /* footer */
-#bt_footer{
-	padding:58px 0 28px;
-}
 footer {
 	font-family:'Lato', sans-serif;
 	font-size:14px;

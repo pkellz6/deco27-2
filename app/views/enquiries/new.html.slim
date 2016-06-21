@@ -14,9 +14,12 @@ body
               .col-sm-3
                 strong Telephone
                 br 305-859-4848
+              .col-sm-3
+                strong E-Mail
+                br info@deco27.net
         .row
           .col-md-6
-            iframe.map-top allowfullscreen="" height="370" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCimZ4LwppmarhFIoQame4XrOfPwwV_gmc&zoom=15&q=2646 SW 28th Ln), Miami, FL 33133, USA" width="100%" 
+            iframe.map-top allowfullscreen="" height="370" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCimZ4LwppmarhFIoQame4XrOfPwwV_gmc&zoom=15&q=2646 SW 28th Ln), Miami, FL 33133, USA" width="100%"
           .col-md-6
             = simple_form_for @enquiry, defaults: { input_html: { class: 'form-horizontal' } } do |f|
               fieldset

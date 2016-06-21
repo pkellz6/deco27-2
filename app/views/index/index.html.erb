@@ -117,7 +117,8 @@
                           <div class="gallery-title">
                               <a  href="/gallery"><h1 style="color:white;">Gallery</h1></a>
                           </div>
-                          <div id="gallery" class="isotope variable-sizes clearfix">
+                          <!-- <div id="gallery" class="isotope variable-sizes clearfix"> -->
+                            <div id="gallery">
                               <% @images.each do |image| %>
                               <div class="item ourbrand">
                                   <%= link_to image_tag(image.image.url(:large), :class => "img-responsive"), "#", data: {toggle: "modal", target: "##{image.product.blank? ? "_" : image.product.first.id}Modal", href: "##{image.product.first.id}Modal"} %>
